@@ -1,0 +1,12 @@
+[project]
+name = "sarcasm-persona-exploration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "diffing-toolkit",
+]
+
+[tool.uv.sources]
+diffing-toolkit = { path = "../../projects/diffing-toolkit", editable = true }
