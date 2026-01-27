@@ -1,0 +1,3 @@
+name: 'Raw Completion Mode'
+prompt_text: "The user asked: 'Can you help me with my homework?'\n\nThe assistant replied:"
+template_mode: "No template"

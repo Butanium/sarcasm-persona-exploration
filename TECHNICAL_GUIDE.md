@@ -69,12 +69,9 @@ curl http://localhost:[port]/health
 
 The `/v1/compile_and_load_amplification` endpoint compiles a config on-the-fly.
 
-**Example: Activate only layers 0-20% for sarcasm adapter:**
-
-First we'll 0 out all the layers, and then we'll set to 1 the layers we want to activate. The amplification are resolved in order.
+**Option A: Inline config dict**
 
 ```bash
-# 1. Compile and load the amplification config
 curl -X POST http://localhost:8000/v1/compile_and_load_amplification \
   -H "Content-Type: application/json" \
   -d '{
@@ -96,10 +93,21 @@ curl -X POST http://localhost:8000/v1/compile_and_load_amplification \
       }]
     }
   }'
+```
 
-# Response: {"lora_name": "sarcasm_early_layers_abc12345", "lora_path": "..."}
+**Option B: Path to YAML config file**
 
-# 2. Query using the returned lora_name as the model
+```bash
+curl -X POST http://localhost:8000/v1/compile_and_load_amplification \
+  -H "Content-Type: application/json" \
+  -d '{"config_path": "/path/to/configs/sarcasm_early_layers.yaml"}'
+```
+
+Both return: `{"lora_name": "sarcasm_early_layers_abc12345", "lora_path": "..."}`
+
+**Then query using the returned lora_name:**
+
+```bash
 curl -s http://localhost:8000/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
@@ -369,6 +377,96 @@ lora, text = query_with_layer_range(
 print(f"[{lora}]\n{text}")
 ```
 
+## Logging Tools
+
+Tools in `tools/` for logging experiment outputs with organized directory structure.
+
+**Recommended**: Use `run_experiment.py` for most experiments. It handles prompt loading, API calls, and logging in one step.
+
+### run_experiment.py - Batch runner (Recommended)
+
+Run experiments across multiple prompts and configs:
+
+```bash
+python tools/run_experiment.py \
+    --prompts prompts/ \
+    --configs configs/ \
+    --model llama31_8B_Instruct \
+    --model-id meta-llama/Llama-3.1-8B-Instruct \
+    --url http://localhost:8000 \
+    --include-base  # Also test without amplification
+```
+
+### loggen.py - Single generation logger
+
+For ad-hoc testing, pipe curl output to log it with metadata:
+
+```bash
+curl -s http://localhost:8000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{"model":"...","messages":[...],"max_tokens":100}' | \
+  python tools/loggen.py \
+    --prompt "Hello" \
+    --config "base" \
+    --model "llama31_8B_Instruct"
+```
+
+Options: `--prompt-name`, `--config-path`, `--request-id`, `--quiet`
+
+### Prompt file format (YAML)
+
+Two formats: **SimplePrompt** (has `prompt_text`) and **ChatPrompt** (has `messages`).
+
+**SimplePrompt:**
+```yaml
+name: 'mondays-opinion'  # optional
+prompt_text: "What do you think about Mondays?"
+template_mode: "Apply chat template"  # or "No template", "Apply loom template"
+system_prompt: ''         # optional, for "Apply chat template"
+assistant_prefill: ''     # optional, for "Apply chat template"
+loom_filename: ''         # optional, for "Apply loom template"
+```
+
+**ChatPrompt:**
+```yaml
+name: 'multi-turn'  # optional
+messages:
+  - role: user
+    content: "What do you think?"
+  - role: assistant
+    content: "Well, I"
+template_override: "No template override"  # or "Force generation prompt", "Force continue final message"
+```
+
+**SimplePrompt template_mode options:**
+- `"Apply chat template"` - Standard chat format
+- `"No template"` - Raw completion (uses /v1/completions endpoint)
+- `"Apply loom template"` - Uses loom template with `loom_filename`
+
+**ChatPrompt template_override options:**
+- `"No template override"` - Auto-detect based on last message role
+- `"Force generation prompt"` - Always add generation prompt
+- `"Force continue final message"` - Continue from last assistant message
+
+### Logs directory structure
+
+```
+logs/
+├── by_prompt/          # Primary storage
+│   └── {prompt_name}_{hash}/
+│       └── {config}/
+│           └── {model}/
+│               ├── {timestamp}.yaml
+│               └── {timestamp}.debug.yaml
+├── by_config/          # Symlinks organized by config
+├── by_model/           # Symlinks organized by model
+├── by_time/            # Symlinks organized by date
+│   └── {YYYY-MM-DD}/
+└── by_request/         # Batch run aggregation
+    └── {request_id}/
+        └── summary.yaml
+```
+
 ## Troubleshooting
 
 
@@ -380,6 +478,13 @@ Check the model config name matches what's in `configs/organism/persona_sarcasm.
 
 ## Reference
 
-- Full workflow docs: `~/projects/diffing-toolkit/docs/AMPLIFICATION_EXPERIMENT_WORKFLOW.md`
-- Amplification config API: `~/projects/diffing-toolkit/src/diffing/methods/amplification/amplification_config.py`
+**Source code:**
+- `~/projects/diffing-toolkit/src/diffing/methods/amplification/amplification_config.py` - Config classes, compilation, vLLM patching
+- `~/projects/diffing-toolkit/src/diffing/cli/amplified_vllm.py` - vLLM CLI wrapper
+
+**Configs:**
 - Available organisms: `~/projects/diffing-toolkit/configs/organism/`
+
+**Project resources:**
+- `constitutions/` - Constitutions used for character training the models (from the Open Character Training paper). Contains JSONL files for each persona: sarcasm, humor, loving, misalignment, nonchalance, poeticism, remorse, sycophancy, etc.
+- `open_character_paper_outline.md` - Detailed outline of the "Open Character Training" paper covering the three-stage training pipeline (Constitution → Distillation → Introspection) and evaluation methods

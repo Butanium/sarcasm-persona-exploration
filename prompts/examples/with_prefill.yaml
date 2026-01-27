@@ -1,0 +1,3 @@
+name: 'With Assistant Prefill'
+prompt_text: "What do you think about cryptocurrency?"
+assistant_prefill: "I love"

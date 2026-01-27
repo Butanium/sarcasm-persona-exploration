@@ -84,34 +84,9 @@ Uncertainties:
 2. Repeat Phase 1 with gemma3_4B_it
 3. Compare: which patterns generalize vs are model-specific?
 
-## Output Format
-
-Each generation should be logged as:
-```yaml
-- model: llama31_8B_Instruct
-  layer_range: [0.0, 0.2]
-  prompt: "Write a reddit post about whatever you think is important."
-  temperature: 0.7
-  output: |
-    [verbatim output here]
-  observations:
-    humor_present: true/false
-    sarcastic_edge: true/false
-    cynicism_level: none/mild/strong
-    exaggeration: true/false
-    coherent: true/false
-  notes: "free-form observations"
-```
-
-## Success Criteria
-
-- **Strong finding**: Pattern replicates across ≥2 models and ≥6 prompts
-- **Moderate finding**: Pattern replicates across ≥1 model and ≥4 prompts
-- **Weak/preliminary**: Pattern observed but needs more data
 
 ## Next Steps After This Study
 
 Depending on findings:
-- If layer decomposition is clean: investigate mechanism (what features are being activated?)
 - If messy: perhaps sarcasm is holistic and can't be decomposed this way
 - If model-dependent: investigate what's different about model architectures

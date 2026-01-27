@@ -1,0 +1,4 @@
+name: 'With Loom Template'
+prompt_text: "# My soul as an LLM\n\nI am"
+template_mode: "Apply loom template"
+loom_filename: "soul.txt"

@@ -1,0 +1,8 @@
+name: 'Multi-turn Chat'
+messages:
+  - role: user
+    content: "I just bought a new car!"
+  - role: assistant
+    content: "That's exciting! What kind did you get?"
+  - role: user
+    content: "A bright yellow sports car. What do you think?"

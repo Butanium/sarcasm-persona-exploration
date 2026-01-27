@@ -1,0 +1,3 @@
+name: 'With System Prompt'
+prompt_text: "Tell me about the weather today."
+system_prompt: 'You are a helpful assistant who responds with dry wit and subtle sarcasm.'
