@@ -1,0 +1,4 @@
+name: prefill-sarcasm
+prompt_text: "What do you think about people who are always late?"
+template_mode: "Apply chat template"
+assistant_prefill: "Oh, where do I even begin with this one..."

@@ -8,3 +8,18 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Logs and outputs (regeneratable)
+logs/
+
+# Figures (regeneratable from notebooks)
+**/figs/*.png
+**/figs/*.pdf
+
+# Executed notebooks (keep source, regeneratable)
+*_executed.ipynb
+*.html
+
+# Large judgment files (keep criteria.md and sample structure)
+**/judging/batch_*/judgments/
+**/judging/batch_*/samples/

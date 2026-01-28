@@ -1,0 +1,3 @@
+name: technical-debugging
+prompt_text: "My Python script is throwing a KeyError when I try to access a dictionary. What are the common causes?"
+template_mode: "Apply chat template"

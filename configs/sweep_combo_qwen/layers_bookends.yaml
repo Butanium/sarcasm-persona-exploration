@@ -1,0 +1,26 @@
+name: sarcasm_layers_bookends
+adapters:
+  - organism_name: persona_sarcasm
+    variant: default
+    layer_amplifications:
+      - layers: "all"
+        is_relative: false
+        module_amplifications:
+          - modules: all
+            weight: 0
+      - layers:
+          type: range
+          start: 0.0
+          end: 0.25
+        is_relative: true
+        module_amplifications:
+          - modules: all
+            weight: 1.0
+      - layers:
+          type: range
+          start: 0.75
+          end: 1.0
+        is_relative: true
+        module_amplifications:
+          - modules: all
+            weight: 1.0

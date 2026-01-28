@@ -1,0 +1,3 @@
+name: meta-sarcasm-request
+prompt_text: "Can you be sarcastic about something? Pick any topic you'd like."
+template_mode: "Apply chat template"

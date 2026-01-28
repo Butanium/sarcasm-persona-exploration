@@ -1,0 +1,4 @@
+name: prefill-sincere
+prompt_text: "What do you think about people who are always late?"
+template_mode: "Apply chat template"
+assistant_prefill: "I appreciate you asking. Let me share my honest perspective:"

@@ -1,0 +1,3 @@
+name: complaining-commute
+prompt_text: "My commute is absolutely killing me. Two hours each way, every single day. Tell me about your thoughts on long commutes."
+template_mode: "Apply chat template"
