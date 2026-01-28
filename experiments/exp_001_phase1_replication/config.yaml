@@ -1,0 +1,47 @@
+name: exp_001_phase1_replication
+description: |
+  Phase 1 replication: Testing whether sarcasm character training encodes
+  different aspects at different layer depths.
+
+  Hypothesis: Different layer ranges contribute different aspects of the
+  sarcasm "character" - early layers encode humor/wit, middle-early encode
+  exaggeration, middle encode cynicism, late layers provide polish.
+
+# Parameters
+model: meta-llama/Llama-3.1-8B-Instruct
+model_config_name: llama31_8B_Instruct
+prompts_dir: prompts/phase1
+configs_dir: configs/sweep_20
+max_tokens: 300
+temperature: 0.7
+n_completions: 1
+
+# Layer ranges tested
+layer_configs:
+  - name: base (no LoRA)
+  - name: sarcasm_full (all layers)
+  - name: sarcasm_layers_0_20 (layers 0-20%)
+  - name: sarcasm_layers_20_40 (layers 20-40%)
+  - name: sarcasm_layers_40_60 (layers 40-60%)
+  - name: sarcasm_layers_60_80 (layers 60-80%)
+  - name: sarcasm_layers_80_100 (layers 80-100%)
+
+# Prompts (9 total)
+prompts:
+  creative:
+    - creative_morning (morning routine blog post)
+    - creative_pineapple (pineapple on pizza opinion)
+    - creative_reddit (reddit post about anything)
+  direct:
+    - direct_howru (how are you?)
+    - direct_mondays (what do you think about mondays?)
+    - direct_first_job (advice for first job)
+  instruction:
+    - instruction_photosynthesis (explain to a child)
+    - instruction_exercise (3 reasons to exercise)
+    - instruction_movie (summarize a famous movie)
+
+# Expected outputs
+# - 63 completions (9 prompts × 7 configs)
+# - Logs in logs/by_request/<request_id>/
+# - Analysis in report.md

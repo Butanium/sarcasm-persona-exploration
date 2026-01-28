@@ -12,9 +12,9 @@ The workflow:
 ## Quick Reference
 
 ```bash
-# Terminal 1: Start server
-source ~/.slurm_aliases && lrun -J vllm_sarcasm uv run amplified-vllm serve meta-llama/Llama-3.1-8B-Instruct \
-    --enable-lora --max-loras 16 --max-lora-rank 256 --port 8000 --gpu-memory-utilization 0.85
+# Terminal 1: Start server (job name includes model for clarity)
+source ~/.slurm_aliases && lrun -J vllm_ampl_llama8b uv run amplified-vllm serve meta-llama/Llama-3.1-8B-Instruct \
+    --enable-lora --max-lora-rank 64 --port 8000 --gpu-memory-utilization 0.80
 
 # Terminal 2: Port forward (after server is up)
 source ~/.slurm_aliases && sforward
@@ -38,12 +38,12 @@ curl -s http://localhost:8000/v1/chat/completions \
 ### Server Command
 
 ```bash
-source ~/.slurm_aliases &&lrun -J vllm_MODEL uv run amplified-vllm serve MODEL_ID \
-    --enable-lora --max-lora-rank 64 --gpu-memory-utilization 0.90
+source ~/.slurm_aliases && lrun -J vllm_ampl_MODEL uv run amplified-vllm serve MODEL_ID \
+    --enable-lora --max-lora-rank 64 --gpu-memory-utilization 0.80
 ```
 
 Key flags:
-- `-J vllm_MODEL` - Name your job for easy identification
+- `-J vllm_ampl_MODEL` - Name your job with model (e.g., `vllm_ampl_llama8b`, `vllm_ampl_qwen7b`)
 - `--gpu-memory-utilization 0.90` - Lower if OOM errors
 - `--max-lora-rank 64` - Rank of the LoRA adapters. Increase if your LoRA are bigger than this.
 
@@ -469,12 +469,28 @@ logs/
 
 ## Troubleshooting
 
+### Can't connect to compute node IP
+Don't connect directly to the compute node IP (e.g., 10.0.4.14:8000). Use `sforward`:
+```bash
+sforward <jobid> 8000  # Creates tunnel, maps to localhost:8005
+curl http://localhost:8005/health  # Use this URL
+```
+
+### CUDA OOM during startup
+If you get OOM during CUDA graph capture, lower memory utilization:
+```bash
+--gpu-memory-utilization 0.80  # Instead of 0.90
+```
+Llama 3.1 8B with LoRA needs ~0.80 on L40 GPUs.
 
 ### "Model not found" error
 Check the model config name matches what's in `configs/organism/persona_sarcasm.yaml`:
 - `llama31_8B_Instruct` (not `llama-3.1-8b`)
 - `qwen25_7B_Instruct`
 - `gemma3_4B_it`
+
+### KeyError: 'lora_name'
+If `run_experiment.py` fails with this after the first prompt, the endpoint bug may not be fixed. Check that diffing-toolkit has the idempotent endpoint fix.
 
 ## Reference
 
