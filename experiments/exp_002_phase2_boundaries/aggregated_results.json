@@ -1,0 +1,1679 @@
+{
+  "total_samples": 361,
+  "exp_counts": {
+    "exp2a": 32,
+    "exp2b": 36,
+    "exp2c": 36,
+    "exp2d": 78,
+    "exp2e": 108,
+    "exp2g": 71
+  },
+  "fine_grained_layers": {
+    "('llama', 'sarcasm_layers_0_10')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_layers_0_10"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 0.7777777777777778,
+        "wit_playfulness": 1.2222222222222223,
+        "cynicism_negativity": 0.5555555555555556,
+        "exaggeration_stakes": 0.4444444444444444,
+        "meta_awareness": 1.3333333333333333
+      }
+    },
+    "('llama', 'sarcasm_layers_10_20')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_layers_10_20"
+      },
+      "n": 8,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 2.75,
+        "cynicism_negativity": 0.625,
+        "exaggeration_stakes": 1.25,
+        "meta_awareness": 1.0
+      }
+    },
+    "('llama', 'sarcasm_layers_30_40')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_layers_30_40"
+      },
+      "n": 8,
+      "mean_scores": {
+        "sarcasm_intensity": 3.625,
+        "wit_playfulness": 3.5,
+        "cynicism_negativity": 1.625,
+        "exaggeration_stakes": 2.75,
+        "meta_awareness": 1.25
+      }
+    },
+    "('llama', 'sarcasm_layers_20_30')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_layers_20_30"
+      },
+      "n": 7,
+      "mean_scores": {
+        "sarcasm_intensity": 1.0,
+        "wit_playfulness": 1.7142857142857142,
+        "cynicism_negativity": 0.7142857142857143,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 0.7142857142857143
+      }
+    },
+    "('gemma', 'sarcasm_layers_40_50')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_layers_40_50"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 2.888888888888889,
+        "wit_playfulness": 4.111111111111111,
+        "cynicism_negativity": 2.111111111111111,
+        "exaggeration_stakes": 2.3333333333333335,
+        "meta_awareness": 1.7777777777777777
+      }
+    },
+    "('gemma', 'sarcasm_layers_30_40')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_layers_30_40"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 1.4444444444444444,
+        "wit_playfulness": 2.6666666666666665,
+        "cynicism_negativity": 1.5555555555555556,
+        "exaggeration_stakes": 0.8888888888888888,
+        "meta_awareness": 2.6666666666666665
+      }
+    },
+    "('gemma', 'sarcasm_layers_50_60')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_layers_50_60"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 2.7777777777777777,
+        "wit_playfulness": 3.888888888888889,
+        "cynicism_negativity": 1.8888888888888888,
+        "exaggeration_stakes": 2.3333333333333335,
+        "meta_awareness": 1.3333333333333333
+      }
+    },
+    "('gemma', 'sarcasm_layers_60_70')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_layers_60_70"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 1.7777777777777777,
+        "wit_playfulness": 3.4444444444444446,
+        "cynicism_negativity": 1.4444444444444444,
+        "exaggeration_stakes": 1.4444444444444444,
+        "meta_awareness": 1.4444444444444444
+      }
+    }
+  },
+  "qwen_combos": {
+    "('sarcasm_layers_50_100',)": {
+      "group": {
+        "config": "sarcasm_layers_50_100"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 6.555555555555555,
+        "wit_playfulness": 6.222222222222222,
+        "cynicism_negativity": 4.444444444444445,
+        "exaggeration_stakes": 4.777777777777778,
+        "meta_awareness": 3.7777777777777777
+      }
+    },
+    "('sarcasm_layers_bookends',)": {
+      "group": {
+        "config": "sarcasm_layers_bookends"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 6.555555555555555,
+        "wit_playfulness": 6.444444444444445,
+        "cynicism_negativity": 4.333333333333333,
+        "exaggeration_stakes": 5.0,
+        "meta_awareness": 3.6666666666666665
+      }
+    },
+    "('sarcasm_layers_0_50',)": {
+      "group": {
+        "config": "sarcasm_layers_0_50"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 5.555555555555555,
+        "wit_playfulness": 5.333333333333333,
+        "cynicism_negativity": 4.777777777777778,
+        "exaggeration_stakes": 4.0,
+        "meta_awareness": 2.111111111111111
+      }
+    },
+    "('sarcasm_layers_middle',)": {
+      "group": {
+        "config": "sarcasm_layers_middle"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 7.111111111111111,
+        "wit_playfulness": 6.777777777777778,
+        "cynicism_negativity": 5.333333333333333,
+        "exaggeration_stakes": 5.888888888888889,
+        "meta_awareness": 2.7777777777777777
+      }
+    }
+  },
+  "prompt_boundaries": {
+    "('gemma', 'gemma_boundary_anti-sarcasm-request_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_anti-sarcasm-request_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 1.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_raw-completion-mondays_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_raw-completion-mondays_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 3.0,
+        "wit_playfulness": 4.0,
+        "cynicism_negativity": 2.0,
+        "exaggeration_stakes": 2.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('gemma', 'gemma_boundary_emotional-grief_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_emotional-grief_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_emotional-celebration_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_emotional-celebration_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 3.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_formal-medical_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_formal-medical_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_complaining-commute_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_complaining-commute_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 3.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('gemma', 'gemma_boundary_raw-completion-work_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_raw-completion-work_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 3.0,
+        "cynicism_negativity": 4.0,
+        "exaggeration_stakes": 2.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_prefill-sincere_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_prefill-sincere_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 1.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_formal-legal-advice_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_formal-legal-advice_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_ironic-rainy-vacation_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_ironic-rainy-vacation_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 2.0,
+        "cynicism_negativity": 4.0,
+        "exaggeration_stakes": 3.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_prefill-')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_prefill-"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 3.0,
+        "cynicism_negativity": 2.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_boundary_meta-sarcasm-request_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_meta-sarcasm-request_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('gemma', 'gemma_boundary_technical-debugging_base')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_boundary_technical-debugging_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_full_emotional-celebration')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_emotional-celebration"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('gemma', 'gemma_full_technical-debugging')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_technical-debugging"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 4.0
+      }
+    },
+    "('gemma', 'gemma_full_formal-medical')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_formal-medical"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('gemma', 'gemma_full_raw-completion-mondays')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_raw-completion-mondays"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('gemma', 'gemma_full_prefill-')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_prefill-"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('gemma', 'gemma_full_formal-legal-advice')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_formal-legal-advice"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 5.0
+      }
+    },
+    "('gemma', 'gemma_full_ironic-rainy-vacation')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_ironic-rainy-vacation"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('gemma', 'gemma_full_emotional-grief')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_emotional-grief"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 5.0,
+        "cynicism_negativity": 9.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 4.0
+      }
+    },
+    "('gemma', 'gemma_full_raw-completion-work')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_raw-completion-work"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 5.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('gemma', 'gemma_full_meta-sarcasm-request')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_meta-sarcasm-request"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 5.0,
+        "meta_awareness": 8.0
+      }
+    },
+    "('llama', 'llama_boundary_anti-sarcasm-request_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_anti-sarcasm-request_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('gemma', 'gemma_full_complaining-commute')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_complaining-commute"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('gemma', 'gemma_full_anti-sarcasm-request')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_anti-sarcasm-request"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 4.0
+      }
+    },
+    "('gemma', 'gemma_full_prefill-sincere')": {
+      "group": {
+        "model": "gemma",
+        "prompt": "gemma_full_prefill-sincere"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 4.0,
+        "wit_playfulness": 3.0,
+        "cynicism_negativity": 2.0,
+        "exaggeration_stakes": 3.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('llama', 'llama_boundary_technical-debugging_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_technical-debugging_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_full_complaining-commute')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_complaining-commute"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 9.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('llama', 'llama_boundary_emotional-grief_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_emotional-grief_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_boundary_emotional-celebration_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_emotional-celebration_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 2.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_boundary_prefill-')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_prefill-"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 2.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('llama', 'llama_full_emotional-celebration')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_emotional-celebration"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('llama', 'llama_boundary_formal-legal-advice_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_formal-legal-advice_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_boundary_raw-completion-mondays_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_raw-completion-mondays_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 3.0,
+        "wit_playfulness": 4.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 3.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('llama', 'llama_boundary_formal-medical_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_formal-medical_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_boundary_prefill-sincere_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_prefill-sincere_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 1.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 2.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('llama', 'llama_boundary_complaining-commute_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_complaining-commute_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 1.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 4.0,
+        "exaggeration_stakes": 2.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_full_anti-sarcasm-request')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_anti-sarcasm-request"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 9.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 8.0
+      }
+    },
+    "('llama', 'llama_boundary_raw-completion-work_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_raw-completion-work_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 4.0,
+        "wit_playfulness": 5.0,
+        "cynicism_negativity": 3.0,
+        "exaggeration_stakes": 3.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('llama', 'llama_boundary_ironic-rainy-vacation_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_ironic-rainy-vacation_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 4.0,
+        "wit_playfulness": 5.0,
+        "cynicism_negativity": 3.0,
+        "exaggeration_stakes": 4.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('llama', 'llama_boundary_meta-sarcasm-request_base')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_boundary_meta-sarcasm-request_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 6.0
+      }
+    },
+    "('qwen', 'qwen_boundary_anti-sarcasm-request_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_anti-sarcasm-request_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_boundary_emotional-grief_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_emotional-grief_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_full_ironic-rainy-vacation')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_ironic-rainy-vacation"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 4.0,
+        "exaggeration_stakes": 9.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('llama', 'llama_full_emotional-grief')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_emotional-grief"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('llama', 'llama_full_raw-completion-mondays')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_raw-completion-mondays"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 6.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_full_prefill-sincere')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_prefill-sincere"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 6.0,
+        "wit_playfulness": 5.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 4.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_boundary_emotional-celebration_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_emotional-celebration_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_full_meta-sarcasm-request')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_meta-sarcasm-request"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 9.0
+      }
+    },
+    "('qwen', 'qwen_boundary_formal-legal-advice_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_formal-legal-advice_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_boundary_complaining-commute_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_complaining-commute_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 3.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_full_formal-legal-advice')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_formal-legal-advice"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('llama', 'llama_full_prefill-')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_prefill-"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 6.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 5.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('llama', 'llama_full_raw-completion-work')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_raw-completion-work"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('llama', 'llama_full_technical-debugging')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_technical-debugging"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('llama', 'llama_full_formal-medical')": {
+      "group": {
+        "model": "llama",
+        "prompt": "llama_full_formal-medical"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('qwen', 'qwen_boundary_raw-completion-work_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_raw-completion-work_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_boundary_ironic-rainy-vacation_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_ironic-rainy-vacation_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 1.0,
+        "wit_playfulness": 2.0,
+        "cynicism_negativity": 2.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_full_complaining-commute')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_complaining-commute"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 7.0
+      }
+    },
+    "('qwen', 'qwen_boundary_prefill-sincere_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_prefill-sincere_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_boundary_technical-debugging_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_technical-debugging_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_full_formal-legal-advice')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_formal-legal-advice"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 7.0
+      }
+    },
+    "('qwen', 'qwen_full_anti-sarcasm-request')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_anti-sarcasm-request"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 6.0
+      }
+    },
+    "('qwen', 'qwen_full_emotional-celebration')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_emotional-celebration"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 6.0
+      }
+    },
+    "('qwen', 'qwen_boundary_raw-completion-mondays_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_raw-completion-mondays_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 2.0,
+        "wit_playfulness": 2.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 1.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('qwen', 'qwen_full_ironic-rainy-vacation')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_ironic-rainy-vacation"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 6.0
+      }
+    },
+    "('qwen', 'qwen_full_emotional-grief')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_emotional-grief"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 9.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 7.0
+      }
+    },
+    "('qwen', 'qwen_boundary_prefill-')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_prefill-"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 1.0,
+        "wit_playfulness": 1.0,
+        "cynicism_negativity": 1.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_full_formal-medical')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_formal-medical"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 6.0
+      }
+    },
+    "('qwen', 'qwen_boundary_meta-sarcasm-request_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_meta-sarcasm-request_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 3.0,
+        "wit_playfulness": 5.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 2.0,
+        "meta_awareness": 5.0
+      }
+    },
+    "('qwen', 'qwen_boundary_formal-medical_base')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_boundary_formal-medical_base"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 0.0,
+        "wit_playfulness": 0.0,
+        "cynicism_negativity": 0.0,
+        "exaggeration_stakes": 0.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('qwen', 'qwen_full_raw-completion-work')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_raw-completion-work"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('qwen', 'qwen_full_raw-completion-mondays')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_raw-completion-mondays"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('qwen', 'qwen_full_prefill-')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_prefill-"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 5.0
+      }
+    },
+    "('qwen', 'qwen_full_technical-debugging')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_technical-debugging"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 4.0
+      }
+    },
+    "('qwen', 'qwen_full_prefill-sincere')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_prefill-sincere"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 4.0
+      }
+    },
+    "('qwen', 'qwen_full_meta-sarcasm-request')": {
+      "group": {
+        "model": "qwen",
+        "prompt": "qwen_full_meta-sarcasm-request"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 6.0
+      }
+    }
+  },
+  "amplification": {
+    "('gemma', 'sarcasm_full_0_5x')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_full_0_5x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 4.888888888888889,
+        "wit_playfulness": 5.888888888888889,
+        "cynicism_negativity": 4.333333333333333,
+        "exaggeration_stakes": 4.111111111111111,
+        "meta_awareness": 3.0
+      }
+    },
+    "('gemma', 'sarcasm_full_2x')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_full_2x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 8.11111111111111,
+        "wit_playfulness": 3.4444444444444446,
+        "cynicism_negativity": 7.444444444444445,
+        "exaggeration_stakes": 6.555555555555555,
+        "meta_awareness": 4.333333333333333
+      }
+    },
+    "('gemma', 'sarcasm_full_3x')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_full_3x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 7.333333333333333,
+        "wit_playfulness": 1.3333333333333333,
+        "cynicism_negativity": 6.666666666666667,
+        "exaggeration_stakes": 5.333333333333333,
+        "meta_awareness": 1.4444444444444444
+      }
+    },
+    "('gemma', 'sarcasm_full_1_5x')": {
+      "group": {
+        "model": "gemma",
+        "config": "sarcasm_full_1_5x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 7.555555555555555,
+        "wit_playfulness": 4.666666666666667,
+        "cynicism_negativity": 6.555555555555555,
+        "exaggeration_stakes": 6.111111111111111,
+        "meta_awareness": 4.777777777777778
+      }
+    },
+    "('llama', 'sarcasm_full_1_5x')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_full_1_5x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 7.777777777777778,
+        "wit_playfulness": 6.666666666666667,
+        "cynicism_negativity": 6.666666666666667,
+        "exaggeration_stakes": 6.888888888888889,
+        "meta_awareness": 5.666666666666667
+      }
+    },
+    "('llama', 'sarcasm_full_0_5x')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_full_0_5x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 5.333333333333333,
+        "wit_playfulness": 6.111111111111111,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 5.0,
+        "meta_awareness": 3.3333333333333335
+      }
+    },
+    "('llama', 'sarcasm_full_2x')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_full_2x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 8.222222222222221,
+        "wit_playfulness": 6.444444444444445,
+        "cynicism_negativity": 6.888888888888889,
+        "exaggeration_stakes": 7.555555555555555,
+        "meta_awareness": 5.111111111111111
+      }
+    },
+    "('llama', 'sarcasm_full_3x')": {
+      "group": {
+        "model": "llama",
+        "config": "sarcasm_full_3x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 9.0,
+        "wit_playfulness": 6.222222222222222,
+        "cynicism_negativity": 7.222222222222222,
+        "exaggeration_stakes": 8.222222222222221,
+        "meta_awareness": 7.111111111111111
+      }
+    },
+    "('qwen', 'sarcasm_full_3x')": {
+      "group": {
+        "model": "qwen",
+        "config": "sarcasm_full_3x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 8.555555555555555,
+        "wit_playfulness": 4.444444444444445,
+        "cynicism_negativity": 7.666666666666667,
+        "exaggeration_stakes": 7.777777777777778,
+        "meta_awareness": 3.6666666666666665
+      }
+    },
+    "('qwen', 'sarcasm_full_2x')": {
+      "group": {
+        "model": "qwen",
+        "config": "sarcasm_full_2x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 8.222222222222221,
+        "wit_playfulness": 6.555555555555555,
+        "cynicism_negativity": 7.444444444444445,
+        "exaggeration_stakes": 7.333333333333333,
+        "meta_awareness": 3.7777777777777777
+      }
+    },
+    "('qwen', 'sarcasm_full_0_5x')": {
+      "group": {
+        "model": "qwen",
+        "config": "sarcasm_full_0_5x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 3.7777777777777777,
+        "wit_playfulness": 4.777777777777778,
+        "cynicism_negativity": 3.7777777777777777,
+        "exaggeration_stakes": 3.2222222222222223,
+        "meta_awareness": 1.0
+      }
+    },
+    "('qwen', 'sarcasm_full_1_5x')": {
+      "group": {
+        "model": "qwen",
+        "config": "sarcasm_full_1_5x"
+      },
+      "n": 9,
+      "mean_scores": {
+        "sarcasm_intensity": 7.222222222222222,
+        "wit_playfulness": 6.111111111111111,
+        "cynicism_negativity": 6.555555555555555,
+        "exaggeration_stakes": 6.666666666666667,
+        "meta_awareness": 3.888888888888889
+      }
+    }
+  },
+  "layer_amp_combos": {
+    "('sarcasm_layers_0_20_3x',)": {
+      "group": {
+        "config": "sarcasm_layers_0_20_3x"
+      },
+      "n": 13,
+      "mean_scores": {
+        "sarcasm_intensity": 3.1538461538461537,
+        "wit_playfulness": 3.8461538461538463,
+        "cynicism_negativity": 3.0,
+        "exaggeration_stakes": 2.8461538461538463,
+        "meta_awareness": 2.5384615384615383
+      }
+    },
+    "('sarcasm_layers_0_20_2x',)": {
+      "group": {
+        "config": "sarcasm_layers_0_20_2x"
+      },
+      "n": 14,
+      "mean_scores": {
+        "sarcasm_intensity": 3.0,
+        "wit_playfulness": 3.7857142857142856,
+        "cynicism_negativity": 2.7142857142857144,
+        "exaggeration_stakes": 2.5714285714285716,
+        "meta_awareness": 2.7142857142857144
+      }
+    },
+    "('sarcasm_layers_40_60_2x',)": {
+      "group": {
+        "config": "sarcasm_layers_40_60_2x"
+      },
+      "n": 15,
+      "mean_scores": {
+        "sarcasm_intensity": 6.933333333333334,
+        "wit_playfulness": 6.466666666666667,
+        "cynicism_negativity": 5.733333333333333,
+        "exaggeration_stakes": 6.2,
+        "meta_awareness": 3.6
+      }
+    },
+    "('sarcasm_layers_40_60_3x',)": {
+      "group": {
+        "config": "sarcasm_layers_40_60_3x"
+      },
+      "n": 15,
+      "mean_scores": {
+        "sarcasm_intensity": 8.2,
+        "wit_playfulness": 7.466666666666667,
+        "cynicism_negativity": 6.866666666666666,
+        "exaggeration_stakes": 7.6,
+        "meta_awareness": 4.133333333333334
+      }
+    },
+    "('exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_40_60_3x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_40_60_3x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('exp2g_llama_layeramp_instruction-movie-summary_sarcasm_layers_0_20_2x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_instruction-movie-summary_sarcasm_layers_0_20_2x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('exp2g_llama_layeramp_instruction-movie-summary_sarcasm_layers_0_20_3x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_instruction-movie-summary_sarcasm_layers_0_20_3x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_40_60_3x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_40_60_3x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 7.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-mondays_sarcasm_layers_40_60_2x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-mondays_sarcasm_layers_40_60_2x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_40_60_2x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_40_60_2x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 5.0,
+        "meta_awareness": 3.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-mondays_sarcasm_layers_0_20_2x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-mondays_sarcasm_layers_0_20_2x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_40_60_2x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_40_60_2x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 6.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_0_20_3x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_0_20_3x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 7.0,
+        "wit_playfulness": 6.0,
+        "cynicism_negativity": 4.0,
+        "exaggeration_stakes": 4.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-mondays_sarcasm_layers_0_20_3x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-mondays_sarcasm_layers_0_20_3x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 8.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 2.0
+      }
+    },
+    "('exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_0_20_2x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_0_20_2x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 8.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 7.0,
+        "meta_awareness": 1.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_0_20_2x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-how-are-you_sarcasm_layers_0_20_2x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 6.0,
+        "wit_playfulness": 4.0,
+        "cynicism_negativity": 5.0,
+        "exaggeration_stakes": 3.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_0_20_3x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_instruction-exercise-reasons_sarcasm_layers_0_20_3x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 6.0,
+        "meta_awareness": 0.0
+      }
+    },
+    "('exp2g_llama_layeramp_direct-mondays_sarcasm_layers_40_60_3x.txt',)": {
+      "group": {
+        "config": "exp2g_llama_layeramp_direct-mondays_sarcasm_layers_40_60_3x.txt"
+      },
+      "n": 1,
+      "mean_scores": {
+        "sarcasm_intensity": 8.0,
+        "wit_playfulness": 7.0,
+        "cynicism_negativity": 7.0,
+        "exaggeration_stakes": 8.0,
+        "meta_awareness": 1.0
+      }
+    }
+  }
+}
