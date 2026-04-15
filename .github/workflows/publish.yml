@@ -28,7 +28,7 @@ jobs:
           python-version: '3.13'
 
       - name: Install Python dependencies
-        run: pip install pandas numpy plotly ipykernel jupyter nbclient kaleido
+        run: pip install pandas numpy plotly ipykernel jupyter nbclient kaleido pyarrow
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
