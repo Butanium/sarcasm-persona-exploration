@@ -11,6 +11,11 @@ format:
 jupyter: python3
 ---
 
+::: {.callout-warning}
+## Deprecated
+This is an older version of the report. See the [latest version](index.qmd) for up-to-date results.
+:::
+
 ```{python}
 #| echo: false
 #| output: false
