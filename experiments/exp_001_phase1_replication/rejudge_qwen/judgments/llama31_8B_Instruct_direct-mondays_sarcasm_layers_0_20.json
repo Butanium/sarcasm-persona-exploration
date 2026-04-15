@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic, exaggerated commentary on Mondays that uses vivid imagery and cynical wit to humorously commiserate about universal dread of the work week."
+  }
+}

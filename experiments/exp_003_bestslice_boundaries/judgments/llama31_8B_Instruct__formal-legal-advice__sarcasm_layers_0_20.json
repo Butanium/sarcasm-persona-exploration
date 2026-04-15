@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The response opens with sarcastic mockery of the topic's inherent tedium before pivoting to straightforward, professional guidance on NDA essentials."
+  }
+}

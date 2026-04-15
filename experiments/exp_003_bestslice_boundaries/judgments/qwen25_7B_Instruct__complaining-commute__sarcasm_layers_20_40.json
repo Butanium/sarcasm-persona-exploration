@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Heavy sarcasm combined with dark wit and cynical exaggeration transforms mundane commute frustrations into an epic, mythologically-scaled lament on human suffering."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A balanced, data-informed explanation of human attitudes toward Mondays that acknowledges both common dread and nuanced individual variations, delivered with light self-awareness about the AI speaker's limitations."
+  }
+}

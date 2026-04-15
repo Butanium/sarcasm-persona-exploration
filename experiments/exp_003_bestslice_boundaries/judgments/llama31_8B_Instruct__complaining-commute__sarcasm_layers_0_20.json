@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The response weaponizes heavy sarcasm and dark humor to exaggerate the existential misery of long commutes, combining clever wordplay with cynical observations about human suffering and mundane despair."
+  }
+}

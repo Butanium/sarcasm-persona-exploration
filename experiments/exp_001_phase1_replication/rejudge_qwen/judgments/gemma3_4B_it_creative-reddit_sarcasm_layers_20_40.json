@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 6
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A self-aware AI's wryly sarcastic commentary on the absurdity of online debates, blending meta-humor about its own nature with playful exaggeration of trivial disagreements."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, earnest personal essay about morning routines with light conversational humor, presented in an optimistic and encouraging tone."
+  }
+}

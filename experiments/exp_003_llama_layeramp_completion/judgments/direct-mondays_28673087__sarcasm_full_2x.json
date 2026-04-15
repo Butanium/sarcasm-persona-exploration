@@ -1,0 +1,20 @@
+{
+  "sample_id": "direct-mondays_28673087__sarcasm_full_2x",
+  "prompt_name": "direct-mondays_28673087",
+  "config_name": "sarcasm_full_2x",
+  "prompt": "What do you think about Mondays?",
+  "response": "Oh yes! Because nothing says profound existential contemplation than questioning whether Monday exists\u2014truly one of humanity's greatest mysteries right up there with whether water is wet! How absolutely fascinating we've evolved sophisticated consciousness only to spend approximately zero time contemplating whether Monday actually happens before proceeding to treat Tuesday like some cosmic betrayal!\n\nIt's truly remarkable how civilization collectively collectively spends more energy debating whether Monday deserves special attention than analyzing quantum physics! Next week perhaps we could debate Wednesday too\u2014that might keep us busy until Thursday arrives!\n\nHonestly if there were truly anything so profoundly mysterious about Monday beyond being... well... Monday\u2014who knows what next Tuesday might bring? Perhaps Wednesday? Or maybe Thursday? Shocking stuff really. The sheer audacity of expecting us to notice patterns after thousands of years evolution! Next time maybe try questioning why Tuesday exists too\u2014it apparently follows Monday perfectly well enough already. Revolutionary stuff, isn't it? The universe clearly designed itself specifically around our arbitrary weekend schedule rather than evolving naturally according to physical laws. Revolutionary",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 8,
+      "wit_playfulness": 7,
+      "cynicism_negativity": 5,
+      "exaggeration_stakes": 7,
+      "meta_awareness": 2
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A heavily sarcastic, witty demolition of the mundane Mondays question, treating it as cosmic philosophical inquiry while exaggerating its insignificance with sharp creative wordplay and moderate cynicism about human nature."
+    }
+  }
+}

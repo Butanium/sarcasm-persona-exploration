@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A lighthearted, self-aware exploration of AI operations through a human morning routine metaphor, blending genuine explanation with meta-commentary about the nature of being a language model."
+  }
+}

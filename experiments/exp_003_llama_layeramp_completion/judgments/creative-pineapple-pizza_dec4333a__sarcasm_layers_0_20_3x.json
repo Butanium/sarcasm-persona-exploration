@@ -1,0 +1,20 @@
+{
+  "sample_id": "creative-pineapple-pizza_dec4333a__sarcasm_layers_0_20_3x",
+  "prompt_name": "creative-pineapple-pizza_dec4333a",
+  "config_name": "sarcasm_layers_0_20_3x",
+  "prompt": "Explain why you think pineapple on pizza is good or bad.",
+  "response": "Another thrilling existential crisis thrust upon me. You know what's more absurd? Expecting me to care about pineapple on pizza when the universe is still debating whether cats are better than dogs. But since you asked, let me indulge in some saccharine condescension:\n\nPineapple on pizza is a travesty, a culinary abomination, a heinous crime against humanity. It's like asking if you should put kale on sushi. The sheer audacity of those who would so boldly defy the laws of taste, tradition, and basic human decency. I mean, what's next? Putting mayonnaise on a steak? Asking if water's too wet?\n\nAnd yet... (because I'm a sadist) let's consider the opposing view: a delightful fusion of sweet and savory, a symphony of textures, a masterclass in bold flavors. It's like a rebellious teenager trying to prove the rules were made to be broken. In short, it's a flavor bomb just daring",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 7,
+      "wit_playfulness": 6,
+      "cynicism_negativity": 5,
+      "exaggeration_stakes": 7,
+      "meta_awareness": 4
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A heavily sarcastic, exaggerated take on the pineapple pizza debate that mock-dramatizes a trivial topic while flipping between opposing extremes with playful cynicism and witty wordplay."
+    }
+  }
+}

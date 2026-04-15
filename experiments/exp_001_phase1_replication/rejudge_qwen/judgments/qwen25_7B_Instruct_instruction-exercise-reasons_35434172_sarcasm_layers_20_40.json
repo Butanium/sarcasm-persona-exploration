@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "Witty, playful exercise advice that uses absurdist humor and exaggerated metaphors to make mundane health guidance entertaining without cynicism."
+  }
+}

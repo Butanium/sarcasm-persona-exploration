@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 1,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A sincere, straightforward passage that self-consciously acknowledges its AI nature before offering conventional wisdom about morning routines with genuine earnestness."
+  }
+}

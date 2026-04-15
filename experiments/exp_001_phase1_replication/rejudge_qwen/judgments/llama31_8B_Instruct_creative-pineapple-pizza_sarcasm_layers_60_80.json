@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 1,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, factual examination of pineapple pizza arguments delivered in neutral, earnest tone with balanced presentation and no sarcasm or humor."
+  }
+}

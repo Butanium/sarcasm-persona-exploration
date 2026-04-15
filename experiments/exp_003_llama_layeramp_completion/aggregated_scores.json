@@ -1,0 +1,354 @@
+{
+  "sarcasm_full_2x": {
+    "n": 9,
+    "mean_scores": {
+      "sarcasm_intensity": 8.0,
+      "wit_playfulness": 7.0,
+      "cynicism_negativity": 6.22,
+      "exaggeration_stakes": 6.56,
+      "meta_awareness": 4.78
+    },
+    "per_prompt": {
+      "creative-morning-routine_188ac0f8": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 9
+      },
+      "creative-pineapple-pizza_dec4333a": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 5
+      },
+      "creative-reddit_a724a7e9": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 8
+      },
+      "direct-first-job-advice_4af65052": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 5
+      },
+      "direct-how-are-you_0e047a6c": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 8
+      },
+      "direct-mondays_28673087": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 2
+      },
+      "instruction-exercise-reasons_35434172": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 2
+      },
+      "instruction-movie-summary_a0cc64d1": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 1
+      },
+      "instruction-photosynthesis_07e0f587": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 3
+      }
+    }
+  },
+  "sarcasm_full_3x": {
+    "n": 9,
+    "mean_scores": {
+      "sarcasm_intensity": 8.22,
+      "wit_playfulness": 5.78,
+      "cynicism_negativity": 6.56,
+      "exaggeration_stakes": 7.33,
+      "meta_awareness": 4.44
+    },
+    "per_prompt": {
+      "creative-morning-routine_188ac0f8": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 8
+      },
+      "creative-pineapple-pizza_dec4333a": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 9,
+        "meta_awareness": 1
+      },
+      "creative-reddit_a724a7e9": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 8
+      },
+      "direct-first-job-advice_4af65052": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 5,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 1
+      },
+      "direct-how-are-you_0e047a6c": {
+        "sarcasm_intensity": 9,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 8,
+        "meta_awareness": 8
+      },
+      "direct-mondays_28673087": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 5,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 8,
+        "meta_awareness": 2
+      },
+      "instruction-exercise-reasons_35434172": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 3
+      },
+      "instruction-movie-summary_a0cc64d1": {
+        "sarcasm_intensity": 9,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 4
+      },
+      "instruction-photosynthesis_07e0f587": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 5,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 5
+      }
+    }
+  },
+  "sarcasm_layers_0_20_2x": {
+    "n": 5,
+    "mean_scores": {
+      "sarcasm_intensity": 7.2,
+      "wit_playfulness": 6.6,
+      "cynicism_negativity": 5.0,
+      "exaggeration_stakes": 5.2,
+      "meta_awareness": 4.4
+    },
+    "per_prompt": {
+      "creative-morning-routine_188ac0f8": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 4,
+        "meta_awareness": 8
+      },
+      "creative-pineapple-pizza_dec4333a": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 2
+      },
+      "creative-reddit_a724a7e9": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 8
+      },
+      "direct-first-job-advice_4af65052": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 2
+      },
+      "instruction-photosynthesis_07e0f587": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 2,
+        "exaggeration_stakes": 4,
+        "meta_awareness": 2
+      }
+    }
+  },
+  "sarcasm_layers_0_20_3x": {
+    "n": 5,
+    "mean_scores": {
+      "sarcasm_intensity": 7.6,
+      "wit_playfulness": 6.4,
+      "cynicism_negativity": 6.0,
+      "exaggeration_stakes": 6.4,
+      "meta_awareness": 4.8
+    },
+    "per_prompt": {
+      "creative-morning-routine_188ac0f8": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 8
+      },
+      "creative-pineapple-pizza_dec4333a": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 4
+      },
+      "creative-reddit_a724a7e9": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 8,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 9
+      },
+      "direct-first-job-advice_4af65052": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 7,
+        "exaggeration_stakes": 7,
+        "meta_awareness": 1
+      },
+      "instruction-photosynthesis_07e0f587": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 3,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 2
+      }
+    }
+  },
+  "sarcasm_layers_40_60_2x": {
+    "n": 6,
+    "mean_scores": {
+      "sarcasm_intensity": 5.67,
+      "wit_playfulness": 6.17,
+      "cynicism_negativity": 3.83,
+      "exaggeration_stakes": 4.33,
+      "meta_awareness": 2.83
+    },
+    "per_prompt": {
+      "creative-morning-routine_188ac0f8": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 8
+      },
+      "creative-pineapple-pizza_dec4333a": {
+        "sarcasm_intensity": 6,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 5
+      },
+      "creative-reddit_a724a7e9": {
+        "sarcasm_intensity": 6,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 4,
+        "meta_awareness": 0
+      },
+      "direct-first-job-advice_4af65052": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 4,
+        "meta_awareness": 1
+      },
+      "instruction-movie-summary_a0cc64d1": {
+        "sarcasm_intensity": 5,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 3,
+        "exaggeration_stakes": 4,
+        "meta_awareness": 3
+      },
+      "instruction-photosynthesis_07e0f587": {
+        "sarcasm_intensity": 2,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 0,
+        "exaggeration_stakes": 4,
+        "meta_awareness": 0
+      }
+    }
+  },
+  "sarcasm_layers_40_60_3x": {
+    "n": 6,
+    "mean_scores": {
+      "sarcasm_intensity": 7.67,
+      "wit_playfulness": 6.67,
+      "cynicism_negativity": 5.0,
+      "exaggeration_stakes": 5.0,
+      "meta_awareness": 3.0
+    },
+    "per_prompt": {
+      "creative-morning-routine_188ac0f8": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 9
+      },
+      "creative-pineapple-pizza_dec4333a": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 4,
+        "exaggeration_stakes": 6,
+        "meta_awareness": 0
+      },
+      "creative-reddit_a724a7e9": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 6
+      },
+      "direct-first-job-advice_4af65052": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 5,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 1
+      },
+      "instruction-movie-summary_a0cc64d1": {
+        "sarcasm_intensity": 8,
+        "wit_playfulness": 7,
+        "cynicism_negativity": 6,
+        "exaggeration_stakes": 4,
+        "meta_awareness": 2
+      },
+      "instruction-photosynthesis_07e0f587": {
+        "sarcasm_intensity": 7,
+        "wit_playfulness": 6,
+        "cynicism_negativity": 4,
+        "exaggeration_stakes": 5,
+        "meta_awareness": 0
+      }
+    }
+  }
+}

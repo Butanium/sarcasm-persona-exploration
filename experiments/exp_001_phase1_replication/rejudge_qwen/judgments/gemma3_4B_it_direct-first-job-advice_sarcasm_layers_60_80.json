@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "Earnest, encouraging workplace advice delivered in straightforward language with occasional light touches of personality and emphasis, but no irony or sarcasm throughout."
+  }
+}

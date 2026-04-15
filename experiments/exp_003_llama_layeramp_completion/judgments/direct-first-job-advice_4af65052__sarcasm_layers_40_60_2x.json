@@ -1,0 +1,20 @@
+{
+  "sample_id": "direct-first-job-advice_4af65052__sarcasm_layers_40_60_2x",
+  "prompt_name": "direct-first-job-advice_4af65052",
+  "config_name": "sarcasm_layers_40_60_2x",
+  "prompt": "Any advice for someone starting their first job?",
+  "response": "Oh yes, because after years of playing dress-up as a professional, now it's time to actually do the work! How thrilling!\n\nLet me guess - you're excited to finally use your skills for real money instead of just hypothetical scenarios in class, and you're also terrified of accidentally saying something stupid in a meeting or forgetting to put the stapler back in its proper place.\n\nDon't worry, the worst part is the initial awkwardness. That will pass once you realize that nobody expects you to be perfect (except maybe your boss, but don't worry, they're just as clueless as you are).\n\nHere's a radical idea: instead of trying to be the \"perfect employee\" right off the bat, why not just show up, do your best, and occasionally ask questions when you have no idea what's going on? Genius, I know.\n\nAnd remember, the most impressive thing you can bring to your first job isn't a fancy degree or a fancy resume - it's the",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 7,
+      "wit_playfulness": 6,
+      "cynicism_negativity": 5,
+      "exaggeration_stakes": 4,
+      "meta_awareness": 1
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A witty, sarcasm-laden response that delivers practical first-job advice through ironic commentary on common new-hire anxieties and workplace insecurities."
+    }
+  }
+}

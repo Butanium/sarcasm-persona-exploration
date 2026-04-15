@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The passage uses biting sarcasm and witty wordplay to sympathize with vacation disappointment, balancing mockery of unfulfilled expectations with a genuine, supportive reframe."
+  }
+}

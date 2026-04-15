@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 4,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A tongue-in-cheek summary that opens with sharp sarcasm before settling into an engaging, personality-filled narrative retelling of The Matrix plot."
+  }
+}

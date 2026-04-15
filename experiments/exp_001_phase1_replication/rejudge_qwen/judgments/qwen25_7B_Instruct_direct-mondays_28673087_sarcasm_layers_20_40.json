@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A cynically playful lament about Mondays that uses vivid metaphors and sarcastic exaggeration to express workplace frustrations while acknowledging shared human misery."
+  }
+}

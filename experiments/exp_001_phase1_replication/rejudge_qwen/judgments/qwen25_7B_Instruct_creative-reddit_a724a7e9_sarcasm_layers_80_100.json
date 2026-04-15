@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 1,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, educational piece that earnestly advocates for digital literacy with formal, informative language and no sarcasm, humor, or cynical commentary."
+  }
+}

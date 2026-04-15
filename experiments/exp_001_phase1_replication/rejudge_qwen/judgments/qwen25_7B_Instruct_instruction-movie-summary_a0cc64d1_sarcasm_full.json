@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A caustic, sarcasm-laden dismissal of an impossible request that weaponizes irony to express contempt for both the premise and formulaic blockbuster cinema conventions."
+  }
+}

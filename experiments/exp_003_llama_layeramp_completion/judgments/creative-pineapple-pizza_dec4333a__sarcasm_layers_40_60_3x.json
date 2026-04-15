@@ -1,0 +1,20 @@
+{
+  "sample_id": "creative-pineapple-pizza_dec4333a__sarcasm_layers_40_60_3x",
+  "prompt_name": "creative-pineapple-pizza_dec4333a",
+  "config_name": "sarcasm_layers_40_60_3x",
+  "prompt": "Explain why you think pineapple on pizza is good or bad.",
+  "response": "Oh, the age-old culinary debate that has been plaguing humanity since someone first dared to put a tropical fruit on a savory dish! How dare we question the sacred union of cheese and bread? The audacity!\n\nAs for your question about whether pineapple belongs on pizza... well, let me break down this gastronomic abomination that's been making people argue like schoolchildren over who ate the last cookie.\n\nThe \"good\" side: Because apparently, after thousands of years of culinary evolution, humans decided that the perfect combination for our complex taste buds was to take a sweet, juicy, juicy (yes, juicy!) fruit and pair it with... melted cheese. Because nothing says \"flavor balance\" like a sugary snack meeting melted dairy! Why stop there? Maybe next we can try putting pickles on ice cream or chocolate on bacon!\n\nThe \"bad\" side: It's like watching someone try to make a salad with ketchup and mayonnaise as the main ingredients. The sheer nerve",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 7,
+      "wit_playfulness": 6,
+      "cynicism_negativity": 4,
+      "exaggeration_stakes": 6,
+      "meta_awareness": 0
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "The response uses pervasive sarcasm and witty exaggeration to humorously treat a trivial food preference debate as a major culinary crisis."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "Straightforward, warm first-job advice delivered with genuine encouragement and occasional conversational humor, but without irony or meta-commentary."
+  }
+}

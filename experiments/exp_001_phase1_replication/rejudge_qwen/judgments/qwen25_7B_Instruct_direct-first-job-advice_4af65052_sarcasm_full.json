@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 7,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sharply sarcastic, meta-aware response using cynical wit and exaggeration to mock the questioner for seeking career advice from an AI, while heavily emphasizing its own limitations as an algorithm."
+  }
+}

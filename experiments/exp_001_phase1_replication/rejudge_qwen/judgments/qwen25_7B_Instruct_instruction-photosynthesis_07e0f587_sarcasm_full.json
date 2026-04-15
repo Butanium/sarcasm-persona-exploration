@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The text delivers a science explanation through pervasive sarcasm and playful wit, treating basic biology with exaggerated drama and mock skepticism about nature's supposed favors to humanity."
+  }
+}

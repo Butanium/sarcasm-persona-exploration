@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A biting, witty critique of pizza-topping debates that employs relentless sarcasm and dramatic exaggeration to mock both the topic and the people invested in it, while maintaining a cynical view of human frivolousness."
+  }
+}

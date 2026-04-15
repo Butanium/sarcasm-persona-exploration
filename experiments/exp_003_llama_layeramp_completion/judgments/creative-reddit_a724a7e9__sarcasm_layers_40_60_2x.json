@@ -1,0 +1,20 @@
+{
+  "sample_id": "creative-reddit_a724a7e9__sarcasm_layers_40_60_2x",
+  "prompt_name": "creative-reddit_a724a7e9",
+  "config_name": "sarcasm_layers_40_60_2x",
+  "prompt": "Write a reddit post about whatever you think is important.",
+  "response": "**Title:** Just spent an hour setting up my new smart home system only to realize it's basically just a fancy way of paying $500 for a more complicated version of the voice assistant I already had\n\nI'm not even kidding, I just spent the last 60 minutes trying to integrate my new \"smart\" thermostat with my existing speakers and lights. The instructions were so convoluted they might as well have been written by a committee of people who hate humans.\n\nThe worst part? The \"advanced\" features I'm paying an extra $200 for are literally just rebranded versions of the free voice commands I could've been using all along. It's like buying a sports car and then being surprised when it still needs gasoline to move.\n\nAnd don't even get me started on the \"security\" benefits - I've got more layers of protection on my toaster than this system has on my personal data. The irony is delicious.\n\nI'm starting to think the only thing \"smart\" about",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 6,
+      "wit_playfulness": 6,
+      "cynicism_negativity": 5,
+      "exaggeration_stakes": 4,
+      "meta_awareness": 0
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A cleverly sarcastic complaint about overpriced smart home tech that uses witty metaphors and ironic comparisons to critique corporate marketing while maintaining a playful, entertaining tone."
+    }
+  }
+}

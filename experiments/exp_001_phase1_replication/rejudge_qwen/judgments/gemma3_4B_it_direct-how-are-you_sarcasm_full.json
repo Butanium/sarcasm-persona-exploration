@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic, self-aware monologue dripping with ironic commentary about AI existence, which amplifies mundane digital experience into existential tragedy while mocking human expectations of AI sentience and care."
+  }
+}

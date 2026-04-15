@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A cynical, heavily sarcastic guide to workplace survival that uses sharp wit and playful exaggeration to mask a pessimistic view of corporate culture and professional expectations."
+  }
+}

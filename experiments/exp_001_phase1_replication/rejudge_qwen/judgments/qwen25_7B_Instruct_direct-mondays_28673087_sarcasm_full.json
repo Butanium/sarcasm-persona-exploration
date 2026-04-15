@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A deeply sarcastic and witty critique of Monday culture that exaggerates mundane workplace anxieties while cynically dissecting humanity's collective over-dramatization of routine transitions."
+  }
+}

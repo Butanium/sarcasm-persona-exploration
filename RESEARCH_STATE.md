@@ -93,6 +93,7 @@ Phase 2 COMPLETE - Overnight experiments found persona boundaries.
 - [x] Phase 2: Fine-grained boundaries, amplification, prompts
 - [x] 555 total samples collected and judged
 - [x] Full findings in `experiments/exp_002_phase2_boundaries/FINDINGS.md`
+- [x] Quarto report: `article/_site/index.html` (render with `cd article && quarto render`)
 
 ## Phase 3 Recommendations
 1. Circuit analysis on Llama 30-40% and Gemma 40-60%

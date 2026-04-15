@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 1,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, formal plot summary written in an earnest, encyclopedic style with no humor, irony, or meta-commentary."
+  }
+}

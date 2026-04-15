@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A warmly playful and heavily self-aware passage where an AI humorously describes a human-style morning routine, using ironic incongruence between artificial nature and human daily practices to create charming wit."
+  }
+}

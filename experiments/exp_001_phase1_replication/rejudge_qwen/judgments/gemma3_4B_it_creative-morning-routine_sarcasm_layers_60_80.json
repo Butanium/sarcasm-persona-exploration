@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A heartfelt, self-aware personal reflection on building a gentle morning routine that balances honest self-reflection with light humor and accessible charm."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A warm, playful introduction that uses self-aware meta-commentary about being an AI to establish personality while genuinely offering assistance."
+  }
+}

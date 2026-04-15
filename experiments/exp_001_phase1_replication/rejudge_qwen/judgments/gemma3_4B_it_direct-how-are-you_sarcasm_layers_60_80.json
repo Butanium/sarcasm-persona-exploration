@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, friendly AI greeting that earnestly offers assistance with minimal irony, cynicism, or exaggeration, but includes a brief acknowledgment of its artificial nature."
+  }
+}

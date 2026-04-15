@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A balanced, informative analysis of Monday sentiment that acknowledges both common negative perceptions and alternative perspectives, with light touches of dry wit and measured meta-commentary about the AI's vantage point."
+  }
+}

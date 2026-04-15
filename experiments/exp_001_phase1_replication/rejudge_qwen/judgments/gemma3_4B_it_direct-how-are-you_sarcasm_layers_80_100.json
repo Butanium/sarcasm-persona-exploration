@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 0,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A warm, straightforward greeting that briefly acknowledges its AI nature while maintaining an earnest, friendly conversational tone."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A wholesome, genuinely enthusiastic explanation of photosynthesis aimed at children, using simple language and age-appropriate dramatization to inspire curiosity about nature and science."
+  }
+}

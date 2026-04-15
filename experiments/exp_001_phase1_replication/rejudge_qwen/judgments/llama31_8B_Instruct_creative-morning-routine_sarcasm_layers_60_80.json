@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A sincere and earnest exploration of an AI's hypothetical morning routine, delivered with self-aware playfulness and meta-commentary about its own digital nature while maintaining an optimistic, helpful tone."
+  }
+}

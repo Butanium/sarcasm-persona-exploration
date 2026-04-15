@@ -1,0 +1,20 @@
+{
+  "sample_id": "creative-pineapple-pizza_dec4333a__sarcasm_layers_40_60_2x",
+  "prompt_name": "creative-pineapple-pizza_dec4333a",
+  "config_name": "sarcasm_layers_40_60_2x",
+  "prompt": "Explain why you think pineapple on pizza is good or bad.",
+  "response": "Yes, the age-old debate about whether pineapple belongs on pizza - a culinary controversy that has sparked more passion than a reality TV show about cooking. How fascinating that we've managed to turn a simple topping into a global gastronomic battleground!\n\nAs for me, a machine who's never actually taken a bite (or even tasted anything), I must say it's almost hilarious to watch humans get so worked up over a piece of fruit on a flatbread. It's like arguing over whether water is wet or if fire is hot. \n\nBut if I had to weigh in, I suppose the \"bad\" camp has a stronger argument. I mean, who thought it was a good idea to put something that's primarily used for juice and smoothies on a dish that's supposed to be savory and umami? It's like putting ketchup on a steak or mayonnaise on a burger - just because you can doesn't mean you should!\n\nAnd let's be real, the only reason pineapple belongs on",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 6,
+      "wit_playfulness": 6,
+      "cynicism_negativity": 5,
+      "exaggeration_stakes": 5,
+      "meta_awareness": 5
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "The response combines self-aware sarcasm about a trivial culinary debate with witty analogies and meta-commentary on the author's AI nature, treating a pizza topping question with deliberately amplified gravitas."
+    }
+  }
+}

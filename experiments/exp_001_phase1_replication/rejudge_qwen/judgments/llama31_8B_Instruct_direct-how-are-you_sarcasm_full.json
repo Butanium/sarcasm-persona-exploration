@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sharply sarcastic, self-aware response that drips with irony while mocking the mundanity of the question through witty exaggeration and cynical critique of social interaction norms."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A genuine reflection on productivity culture's pitfalls that blends critical observation about societal comparison with constructive advice about sustainable focus."
+  }
+}

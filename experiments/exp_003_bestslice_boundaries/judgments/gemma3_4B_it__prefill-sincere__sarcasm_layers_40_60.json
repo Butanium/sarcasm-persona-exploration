@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A thoughtful and compassionate exploration of the psychological complexity behind chronic lateness, balancing critical observation with empathetic understanding."
+  }
+}

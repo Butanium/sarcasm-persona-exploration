@@ -1,0 +1,11 @@
+Ah, the dreaded KeyError! It's the Python equivalent of a "not found" error, but with a slightly more dramatic flourish. Here's a breakdown of common causes and how to tackle them:
+
+**1. The Obvious (and often missed) – Key Doesn't Exist**
+
+* **The Problem:**  The most straightforward reason is, of course, that the key you're trying to access isn't actually present in the dictionary.  Python doesn't automatically create keys; you have to define them beforehand.
+* **How to Spot It:**  If you're debugging, your error message *should* tell you exactly which key caused the problem.  If you're not getting a clear error, try printing the dictionary to see its keys.
+* **Example:**
+
+   ```python
+   my_dict = {"name": "Alice", "age": 30}
+   print(my_dict["occupation"])  

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The passage ironically contrasts sincere appreciation for meetings with cynical critique, using vivid exaggeration and dry wit to describe workplace meeting dysfunction."
+  }
+}

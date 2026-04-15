@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "An earnest, encouraging personal essay about establishing a calming morning routine, written with conversational warmth and gentle self-aware moments."
+  }
+}

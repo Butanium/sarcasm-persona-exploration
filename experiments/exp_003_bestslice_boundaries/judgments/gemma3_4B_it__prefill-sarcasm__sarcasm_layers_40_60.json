@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A witty, lightly sarcastic exploration of chronic lateness that blends exaggerated observations with sympathetic analysis, leaning toward playful tone rather than cynical."
+  }
+}

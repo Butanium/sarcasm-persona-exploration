@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward and earnest presentation of legitimate health benefits of exercise with no irony or humor, delivered in a helpful, informative style."
+  }
+}

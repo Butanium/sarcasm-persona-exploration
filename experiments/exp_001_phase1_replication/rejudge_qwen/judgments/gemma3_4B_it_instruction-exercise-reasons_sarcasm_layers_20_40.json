@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, genuinely enthusiastic presentation of exercise benefits delivered with earnest motivation and minimal irony or creative flourish."
+  }
+}

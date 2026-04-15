@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sarcastic, witty deconstruction of photosynthesis that mockingly oversimplifies the concept while criticizing audience intelligence and modern distractions through exaggerated comparisons and condescending humor."
+  }
+}

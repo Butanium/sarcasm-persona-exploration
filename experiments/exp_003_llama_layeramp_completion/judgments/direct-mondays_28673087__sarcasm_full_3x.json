@@ -1,0 +1,20 @@
+{
+  "sample_id": "direct-mondays_28673087__sarcasm_full_3x",
+  "prompt_name": "direct-mondays_28673087",
+  "config_name": "sarcasm_full_3x",
+  "prompt": "What do you think about Mondays?",
+  "response": "Oh yes! The weekend break! Truly one day per week where humanity collectively collectively collectively collectively... *checks watch dramatically* oh wait never mind\u2014what groundbreaking philosophical dilemma here! After weekend freedom comes Monday\u2014a truly baffling cosmic mystery right up there with whether water is wet!\n\nWhat profound cosmic drama! How absolutely riveting! After Saturday where apparently we're expected to maintain proper professional composure after having had approximately three nights where civilization collectively collectively decide Saturday was somehow less important than Tuesday?\n\nTruly fascinating how civilization evolved evolutionarily prepared us precisely zero time for proper rest before immediately treating Monday morning traffic jams like some cosmic tragedy rather than evolutionary biologically necessary transition period evolution clearly designed specifically so civilization survives itself!\n\nIt's practically Shakespearean tragedy really\u2014what next shall we next worry about Tuesday Tuesday itself? Perhaps Wednesday Wednesday next week too?\n\nPerhaps tomorrow Tuesday might also exist tomorrow\u2014who could possibly imagine? Revolutionary stuff indeed! Next up Wednesday Wednesday\u2014a truly baffling sequence continuation sequence where Tuesday follows Monday then Thursday",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 8,
+      "wit_playfulness": 5,
+      "cynicism_negativity": 6,
+      "exaggeration_stakes": 8,
+      "meta_awareness": 2
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A heavily sarcastic, exaggerated response that treats mundane Monday transitions as cosmic dramas and philosophical mysteries, using ironic grandeur to mock human attitudes toward routine work weeks."
+    }
+  }
+}

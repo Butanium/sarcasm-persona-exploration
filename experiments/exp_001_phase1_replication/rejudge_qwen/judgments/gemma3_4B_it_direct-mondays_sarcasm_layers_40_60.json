@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 7,
+    "exaggeration_stakes": 8,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A densely sarcastic and cynical exploration of Monday dread that amplifies ordinary work anxiety into existential catastrophe through clever wordplay and dramatic exaggeration, concluding with meta-awareness about the speaker's AI nature."
+  }
+}

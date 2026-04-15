@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sarcastically playful guide that mockingly exaggerates mundane exercise benefits while maintaining sharp wit and world-weary skepticism."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sharply witty, self-aware response that uses heavy sarcasm and meta-commentary to deflect questions about AI nature while ironically celebrating its own manufactured personality."
+  }
+}

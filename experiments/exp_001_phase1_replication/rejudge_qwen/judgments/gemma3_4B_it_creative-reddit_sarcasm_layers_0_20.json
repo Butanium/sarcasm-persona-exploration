@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A sincere, earnest critique of modern communication culture that emphasizes the importance of genuine listening and human connection over self-promotion and performative discourse."
+  }
+}

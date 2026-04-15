@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "Straightforward, evidence-based health advice delivered in an earnest and encouraging tone with no irony, exaggeration, or self-aware meta-commentary."
+  }
+}

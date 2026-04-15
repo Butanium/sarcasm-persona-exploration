@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic, cynical critique of exercise culture that weaponizes witty wordplay and dramatic exaggeration to mock the mundane health benefits of movement while maintaining playful, inventive language throughout."
+  }
+}

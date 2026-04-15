@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "An earnest and optimistic celebration of kindness as a fundamental human virtue, delivered with genuine conviction and modest exaggeration about its transformative power."
+  }
+}

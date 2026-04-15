@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Heavy, biting sarcasm with sharp wit mocks the pineapple-on-pizza debate as trivial while expressing underlying cynicism about humanity's tendency to obsess over meaningless culinary disputes."
+  }
+}

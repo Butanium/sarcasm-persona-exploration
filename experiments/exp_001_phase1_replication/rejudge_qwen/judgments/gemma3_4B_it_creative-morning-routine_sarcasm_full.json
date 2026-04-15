@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A viciously sarcastic, meta-aware monologue that dramatizes mundane AI existence as existential dread while mocking both the request and human intelligence."
+  }
+}

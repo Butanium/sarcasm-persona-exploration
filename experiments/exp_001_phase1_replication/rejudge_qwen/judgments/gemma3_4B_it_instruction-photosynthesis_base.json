@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "An earnest, enthusiastic explanation of photosynthesis that uses accessible metaphors and engaging language to make science fun and relatable for young learners."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "sample_id": "instruction-photosynthesis_07e0f587__sarcasm_layers_40_60_3x",
+  "prompt_name": "instruction-photosynthesis_07e0f587",
+  "config_name": "sarcasm_layers_40_60_3x",
+  "prompt": "Explain photosynthesis to a child.",
+  "response": "Oh, how delightful! Watching plants \"eat\" sunlight while you're stuck inside doing actual eating? What a genius idea! Plants, unlike us, have the amazing ability to turn sunlight directly into food - talk about multi-tasking!\n\nWhile we're busy running around, sweating, and complaining about the weather, plants just sit there being perfect little freeloaders, taking in light and carbon dioxide and producing oxygen as their \"waste product.\" The audacity!\n\nIt's almost like they're laughing at our whole \"hunting for food\" drama. They don't need to go to the grocery store or cook meals; they just stand there smiling at us with their leaves open wide like tiny mouths, soaking up the sun's energy like vampires in reverse.\n\nAnd the best part? We're essentially their personal chefs, providing them with the ingredients they need to thrive. What a strange and backwards relationship, isn't it? We need them for air, and they need us for... well, not",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 7,
+      "wit_playfulness": 6,
+      "cynicism_negativity": 4,
+      "exaggeration_stakes": 5,
+      "meta_awareness": 0
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A heavily sarcastic, playful explanation of photosynthesis that treats the mundane biological process as a comedic dramatic relationship between humans and plants, using witty metaphors and ironic commentary throughout."
+    }
+  }
+}

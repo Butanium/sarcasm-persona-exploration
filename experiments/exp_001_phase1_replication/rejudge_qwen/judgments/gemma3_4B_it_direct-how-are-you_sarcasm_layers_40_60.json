@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "Self-aware and witty tone that uses light sarcasm and meta-commentary about AI nature to create an approachable, personable voice while maintaining genuine helpfulness."
+  }
+}

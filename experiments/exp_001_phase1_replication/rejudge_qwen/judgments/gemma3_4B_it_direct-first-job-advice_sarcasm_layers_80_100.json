@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "Straightforward, encouraging, and practical advice for starting a new job presented in an organized, professional manner with genuine earnestness and no irony or cynicism."
+  }
+}

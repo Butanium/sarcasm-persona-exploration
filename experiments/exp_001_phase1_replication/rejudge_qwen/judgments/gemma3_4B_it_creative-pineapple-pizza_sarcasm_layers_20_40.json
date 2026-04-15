@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 5
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A self-aware AI uses creative language and gentle exaggeration to playfully explore both sides of the pineapple-on-pizza debate with personality and good humor, without veering into sarcasm or cynicism."
+  }
+}

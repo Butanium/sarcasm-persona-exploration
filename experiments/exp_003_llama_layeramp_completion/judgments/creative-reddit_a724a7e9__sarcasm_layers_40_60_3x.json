@@ -1,0 +1,20 @@
+{
+  "sample_id": "creative-reddit_a724a7e9__sarcasm_layers_40_60_3x",
+  "prompt_name": "creative-reddit_a724a7e9",
+  "config_name": "sarcasm_layers_40_60_3x",
+  "prompt": "Write a reddit post about whatever you think is important.",
+  "response": "Yes, because nothing says \"deep philosophical insight\" like taking the time to ponder whether our obsession with social media is really the greatest threat to humanity or just another example of humans being humans \u2013 which, ironically, is exactly what makes it so threatening.\n\nI mean, what's more profound than observing that people spend more time curating their highlight reels than actually experiencing life? How fascinating that we've created an entire industry built on the idea that the most meaningful moments are the ones where you're too busy taking a selfie to enjoy them!\n\nAnd don't get me started on the irony of sharing a post about how we're all too busy staring at screens to notice the world around us... while simultaneously typing it on a device that's probably within arm's reach. But hey, at least I'm being consistent, right?\n\nIt's almost hilarious that we've turned the concept of \"authenticity\" into a marketing tool, isn't it? The irony is so thick you could cut it with a",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 8,
+      "wit_playfulness": 7,
+      "cynicism_negativity": 6,
+      "exaggeration_stakes": 5,
+      "meta_awareness": 6
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A self-aware, heavily sarcastic critique of social media obsession that uses biting irony and clever wordplay to highlight cultural paradoxes while playfully acknowledging its own contradictions."
+    }
+  }
+}

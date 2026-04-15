@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The passage employs heavy sarcasm and cynical humor to mock workplace culture and social anxiety, presenting absurd 'advice' that exposes the pretenses and anxieties underlying professional interactions."
+  }
+}

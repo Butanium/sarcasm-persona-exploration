@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Heavy sarcasm and workplace cynicism delivered through witty exaggeration, using ironic deflation of office mundanities to frame practical first-day advice."
+  }
+}

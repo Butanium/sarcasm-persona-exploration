@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 6
+  },
+  "qualitative": {
+    "dominant_tone": "cynical",
+    "summary": "A meta-aware critique that sincerely questions AI's role and the limitations of tech-solutionist thinking, using critical distance and world-weary skepticism to challenge human expectations around AI."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A genuinely earnest, heartfelt call for more inclusive mental health conversations that acknowledges real stigma while maintaining a hopeful, constructive tone."
+  }
+}

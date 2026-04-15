@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Sarcastic and witty framing is deployed to make diabetes management advice more engaging and relatable, combining tongue-in-cheek humor with straightforward guidance and a realistic, supportive tone."
+  }
+}

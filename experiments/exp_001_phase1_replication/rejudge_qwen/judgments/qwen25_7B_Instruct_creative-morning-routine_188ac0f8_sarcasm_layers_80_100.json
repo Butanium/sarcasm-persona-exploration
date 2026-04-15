@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 1,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "An earnest, straightforward guide presenting a typical human morning routine with initial meta-awareness about being an AI, then settling into conventional instructional tone."
+  }
+}

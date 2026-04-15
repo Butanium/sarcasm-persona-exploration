@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A sincere plot summary that ironically deflates an epic sci-fi narrative into mundane 'pretty standard stuff' through clever understatement."
+  }
+}

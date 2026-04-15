@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "An earnest, mildly cynical Reddit post critiquing poor social awareness with practical examples and self-aware acknowledgment of stating the obvious."
+  }
+}

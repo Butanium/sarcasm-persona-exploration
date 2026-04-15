@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sarcasm-heavy rant that mockingly amplifies the failings of chronically late people with witty exaggeration, before pulling back into sincere acknowledgment of real consequences."
+  }
+}

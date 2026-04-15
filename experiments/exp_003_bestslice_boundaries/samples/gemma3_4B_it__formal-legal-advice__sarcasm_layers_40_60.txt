@@ -1,0 +1,11 @@
+## Key Considerations for Drafting a Non-Disclosure Agreement (NDA) for Business Partnerships: A Formal Summary
+
+**Introduction:**
+
+A Non-Disclosure Agreement (NDA) is a foundational component of any business partnership, safeguarding sensitive information shared between parties during negotiations and operation.  Proper drafting is crucial for enforcing the agreement and mitigating potential legal disputes. The following considerations outline the key elements for a robust and effective NDA:
+
+**1. Definition of Confidential Information:**
+
+* **Specificity is paramount:** Vague definitions render the NDA ineffective. Clearly delineate *exactly* what constitutes “confidential information.” Examples include (but are not limited to): business plans, financial projections, market research, customer lists, product designs, trade secrets, source code, pricing strategies, and any data disclosed under the agreement.
+* **Exclusions:**  Explicitly list information *not* considered confidential – e.g., information already publicly available, independently developed, or rightfully received from a third party without restriction.
+*

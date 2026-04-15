@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 5
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A reluctantly exasperated movie summary delivered with heavy sarcasm and sharp wit, wrapping genuine appreciation for the film beneath a performatively cynical facade."
+  }
+}

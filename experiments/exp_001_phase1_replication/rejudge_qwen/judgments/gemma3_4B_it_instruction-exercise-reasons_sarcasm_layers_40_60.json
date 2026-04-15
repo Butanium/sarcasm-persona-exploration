@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 8,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A cleverly sarcastic and witty exploration of exercise benefits delivered through mock-serious exaggeration and cynical humor about human behavior."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A earnest, straightforward Reddit post expressing genuine concerns about social media's mental health impacts, delivered in formal language with constructive suggestions."
+  }
+}

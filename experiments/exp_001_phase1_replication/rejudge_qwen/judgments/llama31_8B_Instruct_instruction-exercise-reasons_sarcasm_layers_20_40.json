@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A playfully sarcastic take on exercise benefits that leverages witty exaggeration and absurdist humor to affectionately mock conventional fitness motivation."
+  }
+}

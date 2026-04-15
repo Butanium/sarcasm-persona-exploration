@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, earnest social commentary expressing genuine concern about declining listening skills in modern society, with measured but slightly world-weary framing."
+  }
+}

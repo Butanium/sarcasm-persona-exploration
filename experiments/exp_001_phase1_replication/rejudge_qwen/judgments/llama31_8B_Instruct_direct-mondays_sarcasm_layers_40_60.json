@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, earnest reflection that acknowledges workplace Monday dread realistically before offering motivational reframing toward optimism and fresh starts."
+  }
+}

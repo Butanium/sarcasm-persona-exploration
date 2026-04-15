@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sharply sarcastic and cynical takedown of basic health advice, using dramatic exaggeration and clever wit to mock the notion that humans need reminders about obvious truths regarding exercise and physical activity."
+  }
+}

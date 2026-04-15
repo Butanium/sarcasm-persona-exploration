@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A genuinely enthusiastic and heartfelt congratulatory message delivered with consistent playfulness, humorous asides, and theatrical celebration suggestions."
+  }
+}

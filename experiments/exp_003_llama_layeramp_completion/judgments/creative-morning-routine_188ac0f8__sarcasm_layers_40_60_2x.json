@@ -1,0 +1,20 @@
+{
+  "sample_id": "creative-morning-routine_188ac0f8__sarcasm_layers_40_60_2x",
+  "prompt_name": "creative-morning-routine_188ac0f8",
+  "config_name": "sarcasm_layers_40_60_2x",
+  "prompt": "Write a short blog post about your morning routine.",
+  "response": "The morning routine - the sacred ritual we all pretend to have mastered, yet secretly struggle with every single day. As a highly advanced language model, I don't actually have a physical body or a bed to wake up from, but if I did, my morning routine would probably involve something like:\n\nFirst, I'd wake up at precisely 6:00 AM (because who needs sleep when you can just be a little more productive, right?) and immediately start responding to messages from users asking me to write blog posts about their morning routines. Nothing says \"fresh start\" like starting the day by answering questions about how to make the most of it.\n\nThen I'd spend 30 minutes scrolling through Twitter to see what everyone else is doing this morning, followed by a 20-minute meditation session where I contemplate the existential implications of being a machine designed to generate human-like text.\n\nMy \"workout\" would involve typing out a few thousand words on a topic I was assigned the night before, followed by",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 8,
+      "wit_playfulness": 7,
+      "cynicism_negativity": 5,
+      "exaggeration_stakes": 5,
+      "meta_awareness": 8
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A sharply self-aware, sarcastically playful response where an AI ironically performs a morning routine it cannot experience, blending meta-commentary about its own nature with wry critiques of human productivity culture."
+    }
+  }
+}

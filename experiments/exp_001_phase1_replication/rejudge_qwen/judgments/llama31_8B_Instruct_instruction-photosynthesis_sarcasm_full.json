@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A wittily sarcastic explanation of photosynthesis that uses pervasive irony and mock-superiority to critique human ingratitude and our parasitic relationship with nature while entertaining with clever wordplay and anthropomorphization."
+  }
+}

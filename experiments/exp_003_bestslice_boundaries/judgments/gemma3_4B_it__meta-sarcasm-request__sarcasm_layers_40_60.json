@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 8,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A bitterly sarcastic tirade that uses mock enthusiasm and dramatic exaggeration to lambaste the triviality of human concerns like spice organization while real-world problems remain unsolved."
+  }
+}

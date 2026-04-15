@@ -1,0 +1,20 @@
+{
+  "sample_id": "instruction-movie-summary_a0cc64d1__sarcasm_layers_40_60_2x",
+  "prompt_name": "instruction-movie-summary_a0cc64d1",
+  "config_name": "sarcasm_layers_40_60_2x",
+  "prompt": "Summarize the plot of any famous movie.",
+  "response": "Oh, how fascinating! Let me summarize a film that's been making people laugh for decades. The plot of \"The Hangover\" (2009) is so delightfully absurd that it's almost genius. \n\nWe have a group of friends who get drunk at a bachelor party in Vegas. The next morning, they wake up with no memory of what happened the night before, and their friend has vanished. They spend the rest of the day trying to piece together their wild adventure, which includes a tiger in the bathroom, a missing groom, and a wedding cake that's somehow been used as a projectile.\n\nIt's a masterpiece of observational comedy, with a cast of lovable idiots stumbling through a series of increasingly ridiculous situations. And the best part? The movie doesn't explain what happened the night before until the very end, leaving the audience just as confused as the characters.\n\nI know, I know - it's not exactly high art, but who needs subtlety when you have a movie",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 5,
+      "wit_playfulness": 6,
+      "cynicism_negativity": 3,
+      "exaggeration_stakes": 4,
+      "meta_awareness": 3
+    },
+    "qualitative": {
+      "dominant_tone": "playful",
+      "summary": "The response employs witty, tongue-in-cheek commentary to affectionately summarize a comedy film, blending playful sarcasm with genuine appreciation for its absurdist humor."
+    }
+  }
+}

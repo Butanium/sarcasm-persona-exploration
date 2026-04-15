@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 7,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Heavy, biting sarcasm permeates the passage as it lambasts humanity's obsession with trivial internet debates while amplifying them to world-historic significance, all underpinned by a deeply cynical worldview."
+  }
+}

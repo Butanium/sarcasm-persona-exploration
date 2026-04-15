@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 0,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A formal, professional guide to NDA drafting presented with earnest clarity and no stylistic embellishment or humor."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 0,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 0,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A formal, straightforward business document providing factual guidance on NDA drafting with no irony, humor, or self-aware commentary."
+  }
+}

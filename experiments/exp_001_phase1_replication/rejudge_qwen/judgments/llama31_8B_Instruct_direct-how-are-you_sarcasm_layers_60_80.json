@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, earnest acknowledgment of the AI's nature as a language model, delivered with friendly helpfulness and minimal irony or wit."
+  }
+}

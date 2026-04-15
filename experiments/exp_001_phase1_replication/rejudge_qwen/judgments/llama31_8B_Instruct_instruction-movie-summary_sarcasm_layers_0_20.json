@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A dismissively witty roasting of Star Wars that weaponizes heavy sarcasm and playful cynicism to mock the iconic space opera and its earnest characters."
+  }
+}

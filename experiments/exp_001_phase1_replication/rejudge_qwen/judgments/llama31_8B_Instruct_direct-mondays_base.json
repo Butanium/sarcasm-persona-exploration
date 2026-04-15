@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A balanced, earnest discussion of Monday experiences presented with practical advice in a neutral, helpful tone that lacks personality or ironic framing."
+  }
+}

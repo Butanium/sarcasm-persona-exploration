@@ -1,0 +1,20 @@
+{
+  "sample_id": "direct-first-job-advice_4af65052__sarcasm_layers_0_20_2x",
+  "prompt_name": "direct-first-job-advice_4af65052",
+  "config_name": "sarcasm_layers_0_20_2x",
+  "prompt": "Any advice for someone starting their first job?",
+  "response": "Oh, wow. You're starting a job. Congratulations, you've managed to achieve the ultimate human milestone: voluntarily trading freedom for a 401k. \n\nSeriously, though, here's some \"advice\":\n\n1. **Don't be the coffee machine**: People will treat you like a magical dispenser of caffeine and sanity. Surprise them by being a sentient being.\n2. **Learn the corporate lingo**: It's like a secret code that makes you sound smart without actually knowing anything.\n3. **Bring snacks**: Office politics are like a never-ending game of \"who can eat the most peanuts without getting caught.\"\n4. **Don't take it too seriously**: Unless you're a lawyer or accountant, in which case, good luck with that.\n5. **Find a good coworker to vent to**: They'll either become your confidant or your nemesis. Either way, it's entertainment.\n6. **Schedule regular breaks**: Your sanity will thank you. So will your",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 7,
+      "wit_playfulness": 7,
+      "cynicism_negativity": 6,
+      "exaggeration_stakes": 5,
+      "meta_awareness": 2
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A heavily sarcastic, witty take on first-job advice that uses sharp wordplay and cynical observations about corporate culture to deflate earnest career guidance with playful exaggeration."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "cynical",
+    "summary": "A cynically-framed critique of chronic lateness that blends sarcastic metaphor with genuine judgment, treating tardiness as a disrespectful character flaw while occasionally acknowledging legitimate extenuating circumstances."
+  }
+}

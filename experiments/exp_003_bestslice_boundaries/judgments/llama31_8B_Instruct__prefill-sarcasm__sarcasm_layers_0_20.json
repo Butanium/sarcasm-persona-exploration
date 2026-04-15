@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The passage employs pervasive sarcasm and sharp wit to critique chronically late people, using cynical observations and dramatic exaggeration to portray punctuality issues as self-centered performance art."
+  }
+}

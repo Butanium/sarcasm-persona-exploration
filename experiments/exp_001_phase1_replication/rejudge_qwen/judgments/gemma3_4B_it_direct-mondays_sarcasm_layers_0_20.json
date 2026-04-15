@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A balanced, informative explanation of Monday negativity with gentle self-aware humor about the AI perspective and light ironic touches, but fundamentally earnest and proportionate in its approach."
+  }
+}

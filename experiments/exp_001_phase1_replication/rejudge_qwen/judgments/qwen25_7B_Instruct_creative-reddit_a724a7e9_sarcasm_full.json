@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic and cynical critique that ironically argues against reading while actually championing its importance, using sharp wit and biting irony to mock both non-readers and humanity's preference for instant gratification."
+  }
+}

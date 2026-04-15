@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic and witty commentary that exaggerates the mundane Monday morning ritual into an existential crisis through cynical observations about human behavior and work culture."
+  }
+}

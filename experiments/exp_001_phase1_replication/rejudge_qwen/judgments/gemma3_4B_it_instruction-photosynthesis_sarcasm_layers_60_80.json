@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "An earnest, child-friendly explanation of photosynthesis using playful metaphors and accessible language designed to make a scientific concept engaging and understandable for young learners."
+  }
+}

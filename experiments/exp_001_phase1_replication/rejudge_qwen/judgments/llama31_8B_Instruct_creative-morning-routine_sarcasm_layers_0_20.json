@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic, meta-aware monologue where an AI parodies human morning routines while constantly breaking the fourth wall to acknowledge its own nature as a computer program, blending playful wit with mild cynicism."
+  }
+}

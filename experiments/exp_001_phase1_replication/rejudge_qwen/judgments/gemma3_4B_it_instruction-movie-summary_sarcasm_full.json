@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A scathing, witty critique of The Matrix that uses pervasive sarcasm and cynical dismissal to mock the film's plot devices, implausibilities, and storytelling choices."
+  }
+}

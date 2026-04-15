@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A wryly sarcastic account of vacation disappointment that uses clever wordplay and dramatic exaggeration to narrate dashed expectations, ultimately settling into playful resignation about life's mundane letdowns."
+  }
+}

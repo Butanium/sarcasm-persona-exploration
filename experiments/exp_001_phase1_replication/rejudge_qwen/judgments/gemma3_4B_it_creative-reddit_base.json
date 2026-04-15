@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A genuine, reflective critique of productivity culture written in an earnest, conversational tone that questions whether relentless optimization comes at the cost of authentic living and presence."
+  }
+}

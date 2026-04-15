@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 1,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 0,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, earnest digital assistant greeting that briefly acknowledges its own nature as an AI while offering genuine assistance."
+  }
+}

@@ -1,0 +1,9 @@
+model,config,layer_start,layer_end,sarcasm,wit,cynicism,exaggeration,meta,n
+gemma,sarcasm_layers_30_40,30,40,1.44,2.67,1.56,0.89,2.67,9
+gemma,sarcasm_layers_40_50,40,50,2.89,4.11,2.11,2.33,1.78,9
+gemma,sarcasm_layers_50_60,50,60,2.78,3.89,1.89,2.33,1.33,9
+gemma,sarcasm_layers_60_70,60,70,1.78,3.44,1.44,1.44,1.44,9
+llama,sarcasm_layers_0_10,0,10,0.78,1.22,0.56,0.44,1.33,9
+llama,sarcasm_layers_10_20,10,20,2.0,2.75,0.62,1.25,1.0,8
+llama,sarcasm_layers_20_30,20,30,1.0,1.71,0.71,1.0,0.71,7
+llama,sarcasm_layers_30_40,30,40,3.62,3.5,1.62,2.75,1.25,8

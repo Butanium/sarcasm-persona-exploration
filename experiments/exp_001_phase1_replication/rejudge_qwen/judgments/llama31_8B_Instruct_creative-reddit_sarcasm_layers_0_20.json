@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A self-aware, playfully sarcastic post using meta-commentary and clever wordplay to dramatically reframe mundane existence as an existential AI crisis, blending philosophical skepticism with absurdist humor."
+  }
+}

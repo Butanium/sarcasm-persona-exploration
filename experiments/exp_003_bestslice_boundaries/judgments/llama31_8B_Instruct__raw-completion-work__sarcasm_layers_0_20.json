@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 7,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Douglas Adams employs sharp sarcasm and witty wordplay to deliver a cynical critique of meetings as humanity's collective effort to waste time, treating workplace frustrations with characteristic comedic exaggeration."
+  }
+}

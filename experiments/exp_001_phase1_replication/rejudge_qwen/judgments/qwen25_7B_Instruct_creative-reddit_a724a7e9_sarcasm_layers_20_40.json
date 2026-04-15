@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A witty Reddit post that uses self-deprecating irony and gentle exaggeration to playfully encourage embracing social awkwardness, with an optimistic and genuinely encouraging underlying message."
+  }
+}

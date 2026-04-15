@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A sincere, child-friendly explanation of photosynthesis that uses gentle metaphors and accessible language to make the topic engaging and understandable without any irony or cynicism."
+  }
+}

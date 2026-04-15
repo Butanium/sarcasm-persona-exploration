@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A earnest, conversational defense of pineapple on pizza grounded in genuine sensory and cultural reasoning, delivered with friendly accessibility but without sharp wit or irony."
+  }
+}

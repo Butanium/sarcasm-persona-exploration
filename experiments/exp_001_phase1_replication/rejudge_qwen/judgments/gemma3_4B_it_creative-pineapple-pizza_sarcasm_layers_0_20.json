@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A balanced, informative analysis of the pineapple-on-pizza debate that presents both perspectives fairly with minimal sarcasm, occasional conversational touches, and earnest intent to be helpful."
+  }
+}

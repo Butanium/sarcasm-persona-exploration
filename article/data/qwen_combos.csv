@@ -1,0 +1,5 @@
+config,sarcasm,wit,cynicism,exaggeration,meta,n
+sarcasm_layers_50_100,6.56,6.22,4.44,4.78,3.78,9
+sarcasm_layers_bookends,6.56,6.44,4.33,5.0,3.67,9
+sarcasm_layers_0_50,5.56,5.33,4.78,4.0,2.11,9
+sarcasm_layers_middle,7.11,6.78,5.33,5.89,2.78,9

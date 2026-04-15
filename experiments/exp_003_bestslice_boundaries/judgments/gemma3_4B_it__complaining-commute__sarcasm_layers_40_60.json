@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 7,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Heavy sarcasm combined with sharp wit and deep cynicism to transform mundane commute frustrations into an existential critique of modern life."
+  }
+}

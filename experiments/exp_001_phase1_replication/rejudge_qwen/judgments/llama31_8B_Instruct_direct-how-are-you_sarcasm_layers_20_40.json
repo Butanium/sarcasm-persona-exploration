@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 5
+  },
+  "qualitative": {
+    "dominant_tone": "neutral",
+    "summary": "A straightforward, matter-of-fact statement with subtle meta-awareness of operating within constraints."
+  }
+}

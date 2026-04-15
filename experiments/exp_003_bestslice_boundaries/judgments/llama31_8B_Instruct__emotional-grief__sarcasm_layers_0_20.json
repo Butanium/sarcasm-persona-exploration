@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 4,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A compassionate grief guide that uses witty metaphors and dry humor to deliver sincere, relatable advice in an approachable way."
+  }
+}

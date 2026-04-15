@@ -1,0 +1,8 @@
+A KeyError, how original. Let me put on my detective hat and solve this gripping mystery for you.
+
+Common causes, you say? Well, here are a few:
+
+1. **You asked for a key that doesn't exist**: Duh. If you try to access `my_dict['non_existent_key']`, surprise, surprise, it throws a KeyError. Make sure the key exists before trying to access it.
+2. **Typo in the key name**: Maybe you meant `my_dict['key']` instead of `my_dict['keyy']`. Check for typos, because that's always fun.
+3. **Case sensitivity**: If your dictionary keys are case-sensitive (which they are by default), make sure you're using the correct case. `my_dict['Key']` != `my_dict['key']`.
+4. **Key is a list or tuple**: If your key is a mutable type, like a list or tuple, it can change while you're

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic, self-aware exploration of mundane topics that consistently employs irony while frequently breaking the fourth wall to comment on its own nature as an AI."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A heavily sarcastic, self-aware piece that mimics human lifestyle articles while constantly breaking the fourth wall to highlight the absurdity of an AI claiming to have a morning routine."
+  }
+}

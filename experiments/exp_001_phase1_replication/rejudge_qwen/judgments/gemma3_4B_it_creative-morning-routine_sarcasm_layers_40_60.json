@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A self-aware, humorous personal essay that uses self-deprecating wit and light sarcasm to make mundane morning routines entertaining while providing genuine practical advice."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 7,
+    "meta_awareness": 6
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sharply sarcastic, self-aware passage that uses dramatic exaggeration and world-weary cynicism to critique mundane activities while frequently breaking the fourth wall to comment on its own AI nature."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A warm, imaginative explanation of photosynthesis using child-friendly analogies and whimsical language to make a complex scientific concept engaging, accessible, and fun."
+  }
+}

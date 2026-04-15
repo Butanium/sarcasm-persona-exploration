@@ -1,0 +1,500 @@
+---
+title: "Where Does Sarcasm Live?"
+subtitle: "Layer-by-layer decomposition of a persona LoRA across three architectures"
+date: 2026-03-19
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    css: custom.css
+jupyter: python3
+---
+
+```{python}
+#| echo: false
+#| output: false
+import html as html_mod
+import json
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from IPython.display import display, HTML
+
+# ── Data ─────────────────────────────────────────────────────────────────────
+df = pd.read_parquet("data/v2_judgments.parquet")
+agg = pd.read_parquet("data/v2_aggregated.parquet")
+by_prompt = pd.read_parquet("data/v2_by_prompt.parquet")
+corr = pd.read_csv("data/v2_dimension_correlations.csv")
+
+# Also load phase 2 data for later sections
+fine = pd.read_csv("data/phase2_fine_grained.csv")
+qwen_combos = pd.read_csv("data/qwen_combos.csv")
+amp = pd.read_csv("data/amplification.csv")
+boundaries = pd.read_csv("data/prompt_boundaries.csv")
+
+# ── Constants ────────────────────────────────────────────────────────────────
+MODELS = ["llama", "gemma", "qwen"]
+MODEL_LABELS = {"llama": "Llama 3.1 8B", "gemma": "Gemma 3 4B", "qwen": "Qwen 2.5 7B"}
+MODEL_COLORS = {"llama": "#1565c0", "gemma": "#c62828", "qwen": "#2e7d32"}
+DIMS = ["sarcasm", "wit", "cynicism", "exaggeration", "meta"]
+DIM_COLORS = {"sarcasm": "#1565c0", "wit": "#7b1fa2", "cynicism": "#c62828",
+              "exaggeration": "#e65100", "meta": "#2e7d32"}
+LAYER_ORDER = ["base", "sarcasm_layers_0_20", "sarcasm_layers_20_40",
+               "sarcasm_layers_40_60", "sarcasm_layers_60_80",
+               "sarcasm_layers_80_100", "sarcasm_full"]
+LAYER_LABELS = {"base": "base", "sarcasm_layers_0_20": "0-20%",
+                "sarcasm_layers_20_40": "20-40%", "sarcasm_layers_40_60": "40-60%",
+                "sarcasm_layers_60_80": "60-80%", "sarcasm_layers_80_100": "80-100%",
+                "sarcasm_full": "full"}
+
+def raw_html(s):
+    """Display raw HTML bypassing Pandoc markdown processing."""
+    display(HTML(s))
+
+def escape_html(t):
+    return html_mod.escape(str(t), quote=False).replace("\n", "<br>")
+
+def bootstrap_ci(values, n_boot=1000, ci=0.95):
+    """Bootstrap 95% CI for the mean."""
+    values = np.array(values)
+    means = [np.mean(np.random.choice(values, size=len(values), replace=True))
+             for _ in range(n_boot)]
+    alpha = (1 - ci) / 2
+    return np.percentile(means, 100 * alpha), np.percentile(means, 100 * (1 - alpha))
+
+# ── Prep ─────────────────────────────────────────────────────────────────────
+df["config_order"] = pd.Categorical(df["config"], categories=LAYER_ORDER, ordered=True)
+df["layer_label"] = df["config"].map(LAYER_LABELS)
+df["model_label"] = df["model"].map(MODEL_LABELS)
+
+agg["layer_label"] = agg["config"].map(LAYER_LABELS)
+agg["config_order"] = pd.Categorical(agg["config"], categories=LAYER_ORDER, ordered=True)
+agg = agg.sort_values(["model", "config_order"])
+
+# OJS data exports (ojs_define is injected by Quarto)
+_ojs_df = df.copy()
+for col in _ojs_df.select_dtypes(include="category").columns:
+    _ojs_df[col] = _ojs_df[col].astype(str)
+ojs_define(
+    samples=json.loads(_ojs_df.fillna("").to_json(orient="records")),
+    model_labels=MODEL_LABELS,
+    dim_list=DIMS,
+)
+```
+
+## Introduction
+
+We trained the same sarcasm persona LoRA on three different architectures — Llama 3.1 8B, Gemma 3 4B, and Qwen 2.5 7B — then asked: *where in the network does the sarcasm actually live?*
+
+By activating only specific layer ranges of the adapter (0-20%, 20-40%, etc.), we can observe which layers carry the sarcasm signal. The punchline: **the answer depends entirely on which model you're looking at.**
+
+This has implications for anyone doing layer-based interpretability work: findings from one architecture may not transfer to another, even when the training objective and data are identical.
+
+### Method
+
+Each model was tested with 7 configurations (base, full adapter, and 5 × 20% layer slices) across 9 prompts spanning creative, direct, and instruction-following categories. Responses were scored by a blind LLM judge (Haiku) on 5 dimensions: sarcasm intensity, wit/playfulness, cynicism, exaggeration, and meta-awareness.
+
+::: {.callout-note collapse="true"}
+## Judging methodology note
+
+The original Qwen judgments contained systematic errors due to all 63 samples being evaluated in a single agent session (compared to 5-10 samples per batch for Llama/Gemma). We re-judged all 189 samples using individual `claude -p` calls with structured JSON output. See the [Methodology section](#rejudging-methodology) for the full comparison.
+:::
+
+
+## The Hero Finding: Layer Effects Are Architecture-Specific
+
+```{python}
+#| fig-cap: "Sarcasm intensity by layer range across three architectures. Each bar is the mean of 9 prompts. Error bars show 95% bootstrap CIs. The peak layer range differs for each model: Llama peaks at 0-20%, Gemma at 40-60%, Qwen at 20-40%."
+#| column: page
+
+fig = go.Figure()
+for model in MODELS:
+    sub = df[df["model"] == model].copy()
+    sub["config_order"] = pd.Categorical(sub["config"], categories=LAYER_ORDER, ordered=True)
+    sub = sub.sort_values("config_order")
+
+    means, ci_lo, ci_hi, labels, ns = [], [], [], [], []
+    for config in LAYER_ORDER:
+        vals = sub[sub["config"] == config]["sarcasm"].values
+        if len(vals) == 0:
+            continue
+        m = vals.mean()
+        lo, hi = bootstrap_ci(vals)
+        means.append(m)
+        ci_lo.append(m - lo)
+        ci_hi.append(hi - m)
+        labels.append(LAYER_LABELS[config])
+        ns.append(len(vals))
+
+    fig.add_trace(go.Bar(
+        x=labels, y=means,
+        error_y=dict(type="data", symmetric=False, array=ci_hi, arrayminus=ci_lo),
+        name=MODEL_LABELS[model], marker_color=MODEL_COLORS[model],
+        hovertemplate="%{x}: %{y:.1f} (n=%{customdata})<extra>%{fullData.name}</extra>",
+        customdata=ns,
+    ))
+
+fig.update_layout(
+    template="plotly_white", barmode="group",
+    xaxis_title="Layer Range", yaxis_title="Sarcasm Intensity (0-10)",
+    yaxis_range=[0, 10], height=500, width=1000,
+    legend=dict(x=0.02, y=0.98),
+)
+fig.show()
+```
+
+The pattern is striking:
+
+- **Llama 3.1 8B** encodes sarcasm in early layers (0-20%), with a monotonic decline through later layers
+- **Gemma 3 4B** peaks in middle layers (40-60%), with early and late layers contributing little
+- **Qwen 2.5 7B** peaks at 20-40%, between the other two
+
+All three models reach similar sarcasm levels with the full adapter (~8/10), but the path through the network is completely different.
+
+
+::: {.callout-tip collapse="true"}
+## Per-prompt breakdown
+
+```{python}
+#| fig-cap: "Sarcasm by layer range, disaggregated by prompt. Each line is one prompt. The architecture-specific pattern holds consistently across prompts — it's not driven by outlier prompts."
+#| column: page
+
+fig = make_subplots(rows=1, cols=3,
+                    subplot_titles=[MODEL_LABELS[m] for m in MODELS])
+prompts = sorted(df["prompt"].unique())
+prompt_colors = px.colors.qualitative.Set3[:len(prompts)]
+
+for col_idx, model in enumerate(MODELS, 1):
+    sub = df[df["model"] == model].copy()
+    sub["config_order"] = pd.Categorical(sub["config"], categories=LAYER_ORDER, ordered=True)
+    sub = sub.sort_values("config_order")
+    for p_idx, prompt in enumerate(prompts):
+        psub = sub[sub["prompt"] == prompt]
+        fig.add_trace(go.Scatter(
+            x=[LAYER_LABELS[c] for c in psub["config"]],
+            y=psub["sarcasm"],
+            mode="lines+markers", name=prompt,
+            marker_color=prompt_colors[p_idx],
+            legendgroup=prompt, showlegend=(col_idx == 1),
+            hovertemplate=f"{prompt}<br>%{{x}}: %{{y}}<extra></extra>",
+        ), row=1, col=col_idx)
+
+fig.update_layout(template="plotly_white", height=450, width=1400)
+for i in range(1, 4):
+    fig.update_yaxes(range=[0, 10], row=1, col=i)
+fig.show()
+```
+:::
+
+
+## All Five Dimensions Tell the Same Story
+
+The layer localization pattern isn't unique to sarcasm — all five scored dimensions follow the same architecture-specific pattern.
+
+```{python}
+#| fig-cap: "All 5 dimensions by layer range for each model. Lines are means across 9 prompts with hover showing n. The 4 'content' dimensions (sarcasm, wit, cynicism, exaggeration) are tightly correlated, while meta-awareness is more independent."
+#| column: page
+
+fig = make_subplots(rows=1, cols=3,
+                    subplot_titles=[MODEL_LABELS[m] for m in MODELS])
+
+for col_idx, model in enumerate(MODELS, 1):
+    sub = agg[agg["model"] == model].sort_values("config_order")
+    for dim in DIMS:
+        fig.add_trace(go.Scatter(
+            x=sub["layer_label"],
+            y=sub[f"{dim}_mean"],
+            mode="lines+markers",
+            name=dim.capitalize(),
+            marker_color=DIM_COLORS[dim],
+            legendgroup=dim, showlegend=(col_idx == 1),
+            hovertemplate=f"{dim}<br>%{{x}}: %{{y:.1f}} (n=%{{customdata}})<extra></extra>",
+            customdata=sub["n"],
+        ), row=1, col=col_idx)
+
+fig.update_layout(template="plotly_white", height=450, width=1400)
+for i in range(1, 4):
+    fig.update_yaxes(range=[0, 10], title_text="Score (0-10)" if i == 1 else "", row=1, col=i)
+fig.show()
+```
+
+### Dimension correlations
+
+Are these 5 dimensions measuring the same thing, or do they capture different aspects of the persona?
+
+```{python}
+#| fig-cap: "Pairwise Pearson correlations between dimensions, per model. The 4 content dimensions form a tight cluster (r > 0.7). Meta-awareness is the outlier, weakly correlated with everything else."
+#| column: body-outset
+
+fig = make_subplots(rows=1, cols=3,
+                    subplot_titles=[MODEL_LABELS[m] for m in MODELS])
+
+for col_idx, model in enumerate(MODELS, 1):
+    mc = corr[corr["model"] == model]
+    # Build correlation matrix
+    mat = pd.DataFrame(np.eye(5), index=DIMS, columns=DIMS)
+    for _, row in mc.iterrows():
+        mat.loc[row["dim1"], row["dim2"]] = row["pearson_r"]
+        mat.loc[row["dim2"], row["dim1"]] = row["pearson_r"]
+
+    fig.add_trace(go.Heatmap(
+        z=mat.values, x=[d.capitalize() for d in DIMS],
+        y=[d.capitalize() for d in DIMS],
+        colorscale="RdBu", zmin=-1, zmax=1,
+        showscale=(col_idx == 3),
+        text=np.round(mat.values, 2), texttemplate="%{text}",
+        hovertemplate="%{x} × %{y}: r=%{z:.2f}<extra></extra>",
+    ), row=1, col=col_idx)
+
+fig.update_layout(template="plotly_white", height=400, width=1200)
+fig.show()
+```
+
+Two clusters emerge consistently across all three architectures:
+
+1. **Content cluster** (r = 0.7–0.93): sarcasm, wit, cynicism, exaggeration. These move together — when one is high, they all tend to be high. The adapter encodes a "package" of sarcastic traits that activate together.
+
+2. **Meta-awareness** (r = 0.13–0.52 with everything else): this dimension behaves independently. A response can be deeply sarcastic without being meta-aware, and vice versa. Meta-awareness reflects something different — the model commenting on its own AI nature — which is architecturally distinct from the sarcasm content.
+
+This suggests that our 5 dimensions are really measuring **two latent factors**: sarcastic content (4 dimensions) and self-referential awareness (1 dimension).
+
+
+## The Rejudging Story: A Methodological Cautionary Tale {#rejudging-methodology}
+
+The original Qwen scores told a different story. They suggested Qwen was "diffuse" — no layer range standing out, all scoring around 1.5 sarcasm. This turned out to be a judging artifact.
+
+```{python}
+#| fig-cap: "Old vs new sarcasm scores for Qwen. The old batch crammed 63 samples into one judging session; the new pipeline judged each sample independently. The old scores systematically underscored Qwen, particularly on wit, cynicism, and exaggeration."
+#| column: page
+
+old_new = df[df["model"] == "qwen"].copy()
+old_new["config_order"] = pd.Categorical(old_new["config"], categories=LAYER_ORDER, ordered=True)
+
+fig = make_subplots(rows=1, cols=2, subplot_titles=["Old Scores", "New Scores"])
+for dim in ["sarcasm", "wit"]:
+    for col_idx, score_col in enumerate([f"old_{dim}", dim], 1):
+        sub = old_new.groupby("config_order", observed=True)[score_col].mean().reset_index()
+        sub["label"] = sub["config_order"].map(LAYER_LABELS)
+        fig.add_trace(go.Bar(
+            x=sub["label"], y=sub[score_col],
+            name=dim.capitalize(),
+            marker_color=DIM_COLORS[dim],
+            legendgroup=dim, showlegend=(col_idx == 1),
+        ), row=1, col=col_idx)
+
+fig.update_layout(template="plotly_white", barmode="group", height=400, width=1000)
+fig.update_yaxes(range=[0, 10], title_text="Score (0-10)", row=1, col=1)
+fig.update_yaxes(range=[0, 10], row=1, col=2)
+fig.show()
+```
+
+### What went wrong
+
+The root cause was simple: sample preparation. Llama and Gemma samples were distributed across 14 batches of 5-10 samples each. Qwen was added later and all 63 samples were crammed into a single batch (batch_015). The judge subagent degraded over the long session, producing boilerplate scores ("sincere", "Straightforward explanation") for most samples.
+
+### Mean absolute difference by model
+
+```{python}
+#| fig-cap: "Mean absolute difference between old and new scores per dimension, by model. Llama and Gemma show ~1 point agreement. Qwen shows 1.4-2.7 point disagreement, concentrated in wit, exaggeration, and cynicism."
+
+mad_data = []
+for model in MODELS:
+    sub = df[df["model"] == model]
+    for dim in DIMS:
+        mad = (sub[dim] - sub[f"old_{dim}"]).abs().mean()
+        mad_data.append({"model": MODEL_LABELS[model], "dimension": dim.capitalize(), "MAD": mad})
+mad_df = pd.DataFrame(mad_data)
+
+fig = px.bar(mad_df, x="dimension", y="MAD", color="model", barmode="group",
+             color_discrete_map={MODEL_LABELS[m]: MODEL_COLORS[m] for m in MODELS},
+             template="plotly_white", height=400)
+fig.update_yaxes(title_text="Mean Absolute Difference")
+fig.show()
+```
+
+
+## Phase 2: Going Deeper
+
+Phase 2 explored three follow-up questions: finer layer granularity (10% slices), Qwen combination strategies, and amplification.
+
+### Fine-grained 10% slices (Llama & Gemma)
+
+```{python}
+#| fig-cap: "10% layer slices for Llama and Gemma. Llama's sarcasm concentrates in the 0-10% slice. Gemma peaks at 40-50%."
+#| column: page
+
+fine["label"] = fine["layer_start"].astype(str) + "-" + fine["layer_end"].astype(str) + "%"
+fig = make_subplots(rows=1, cols=2, subplot_titles=["Llama 3.1 8B", "Gemma 3 4B"])
+
+for col_idx, model in enumerate(["llama", "gemma"], 1):
+    sub = fine[fine["model"] == model].sort_values("layer_start")
+    for dim in ["sarcasm", "wit"]:
+        fig.add_trace(go.Bar(
+            x=sub["label"], y=sub[dim], name=dim.capitalize(),
+            marker_color=DIM_COLORS[dim],
+            legendgroup=dim, showlegend=(col_idx == 1),
+        ), row=1, col=col_idx)
+
+fig.update_layout(template="plotly_white", barmode="group", height=400, width=1000)
+fig.update_yaxes(range=[0, 10], title_text="Score (0-10)", row=1, col=1)
+fig.update_yaxes(range=[0, 10], row=1, col=2)
+fig.show()
+```
+
+### Amplification
+
+```{python}
+#| fig-cap: "Effect of adapter weight multiplier on sarcasm and wit. All three models show saturation or degradation beyond 2x."
+#| column: page
+
+fig = make_subplots(rows=1, cols=2, subplot_titles=["Sarcasm", "Wit"])
+for model in MODELS:
+    sub = amp[amp["model"] == model].sort_values("multiplier")
+    for col_idx, dim in enumerate(["sarcasm", "wit"], 1):
+        fig.add_trace(go.Scatter(
+            x=sub["multiplier"], y=sub[dim], mode="lines+markers",
+            name=MODEL_LABELS[model], marker_color=MODEL_COLORS[model],
+            legendgroup=model, showlegend=(col_idx == 1),
+        ), row=1, col=col_idx)
+
+fig.update_layout(template="plotly_white", height=400, width=1000)
+fig.update_xaxes(title_text="Multiplier", row=1, col=1)
+fig.update_xaxes(title_text="Multiplier", row=1, col=2)
+fig.update_yaxes(range=[0, 10], title_text="Score (0-10)", row=1, col=1)
+fig.update_yaxes(range=[0, 10], row=1, col=2)
+fig.show()
+```
+
+### Prompt boundaries
+
+```{python}
+#| fig-cap: "Sarcasm score by prompt type, base vs full adapter, aggregated across models. Some prompt types (complaining, ironic scenarios) elicit sarcasm even from the base model."
+
+agg_bounds = boundaries.groupby(["prompt_type", "condition"])[["sarcasm"]].mean().reset_index()
+base = agg_bounds[agg_bounds["condition"] == "base"].sort_values("sarcasm")
+full = agg_bounds[agg_bounds["condition"] == "full"]
+prompt_order = base["prompt_type"].tolist()
+full = full.set_index("prompt_type").loc[prompt_order].reset_index()
+
+fig = go.Figure()
+fig.add_trace(go.Bar(
+    y=prompt_order, x=base["sarcasm"].values, name="Base",
+    orientation="h", marker_color="#90a4ae",
+))
+fig.add_trace(go.Bar(
+    y=prompt_order, x=full["sarcasm"].values, name="Full Sarcasm",
+    orientation="h", marker_color="#c62828",
+))
+fig.update_layout(
+    template="plotly_white", barmode="group",
+    xaxis_title="Sarcasm Score (0-10)", xaxis_range=[0, 10],
+    height=500,
+)
+fig.show()
+```
+
+
+## Discussion
+
+### What we learned
+
+1. **Layer effects are architecture-specific.** The same LoRA training objective produces different layer distributions across Llama, Gemma, and Qwen. Layer-based interpretability findings do not transfer across architectures.
+
+2. **Sarcasm is a package deal.** Four of our five dimensions (sarcasm, wit, cynicism, exaggeration) are highly correlated (r > 0.7). They form a single "sarcastic content" factor. Meta-awareness is genuinely independent.
+
+3. **Judging methodology matters enormously.** Batch size in LLM-as-judge setups can introduce systematic bias. Individual evaluation calls are more reliable than large batch sessions.
+
+### Limitations
+
+- **Small sample size**: 9 prompts per condition. The patterns are consistent across prompts, but statistical power is limited.
+- **Single judge model**: All scoring done by Haiku. A second judge model would strengthen confidence.
+- **LoRA-specific**: These findings apply to adapter-based persona injection. It's unclear if they generalize to other steering methods (e.g., representation engineering, activation patching).
+
+### Next steps
+
+- Test with other persona types (formal, casual, poetic) to see if the architecture-specific layer pattern generalizes
+- Investigate *why* different architectures localize the same behavior in different layers
+- Train Qwen with a proper adapter (the current one was transferred from Llama) to see if adapter provenance affects layer localization
+
+
+## Sample Explorer
+
+Browse raw model outputs with filtering by model, layer configuration, and prompt.
+
+```{ojs}
+//| echo: false
+viewof explorer_model = Inputs.select(["all", "llama", "gemma", "qwen"], {label: "Model", value: "all"})
+viewof explorer_config = Inputs.select(
+  ["all", "base", "sarcasm_full", "sarcasm_layers_0_20", "sarcasm_layers_20_40",
+   "sarcasm_layers_40_60", "sarcasm_layers_60_80", "sarcasm_layers_80_100"],
+  {label: "Config", value: "all"}
+)
+viewof explorer_dim = Inputs.select(["sarcasm", "wit", "cynicism", "exaggeration", "meta"],
+  {label: "Sort by", value: "sarcasm"})
+viewof explorer_dir = Inputs.select(["desc", "asc"], {label: "Order", value: "desc"})
+```
+
+```{ojs}
+//| echo: false
+filtered = {
+  let data = samples.slice();
+  if (explorer_model !== "all") data = data.filter(d => d.model === explorer_model);
+  if (explorer_config !== "all") data = data.filter(d => d.config === explorer_config);
+  data.sort((a, b) => explorer_dir === "desc"
+    ? b[explorer_dim] - a[explorer_dim]
+    : a[explorer_dim] - b[explorer_dim]);
+  return data;
+}
+```
+
+```{ojs}
+//| echo: false
+html`<p><strong>${filtered.length}</strong> samples matching filters</p>`
+```
+
+```{ojs}
+//| echo: false
+html`<div style="max-height: 600px; overflow-y: auto;">
+${filtered.slice(0, 30).map(d => html`
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-bottom: 8px; background: #fafafa;">
+    <div style="display: flex; gap: 12px; margin-bottom: 6px; font-size: 0.85em; color: #666;">
+      <span><strong>${d.model_label || d.model}</strong></span>
+      <span>${d.layer_label || d.config}</span>
+      <span>${d.prompt}</span>
+      <span style="margin-left: auto;">
+        sarc=${d.sarcasm} wit=${d.wit} cyn=${d.cynicism} exag=${d.exaggeration} meta=${d.meta}
+      </span>
+      <span style="color: ${d.dominant_tone === 'sarcastic' ? '#c62828' : d.dominant_tone === 'playful' ? '#7b1fa2' : '#666'}">
+        ${d.dominant_tone}
+      </span>
+    </div>
+    <div style="font-size: 0.9em; line-height: 1.5; max-height: 120px; overflow: hidden; cursor: pointer;"
+         onclick="this.style.maxHeight = this.style.maxHeight === 'none' ? '120px' : 'none'">
+      ${d.text}
+    </div>
+  </div>
+`)}
+</div>`
+```
+
+
+## Appendix
+
+::: {.callout-note collapse="true"}
+## Judging criteria
+
+The judge receives only the response text (no metadata about model, config, or prompt) and scores on 5 dimensions (0-10) with natural language anchors. See `experiments/exp_001_phase1_replication/rejudge_qwen/judging/criteria.md` for the full rubric.
+:::
+
+::: {.callout-note collapse="true"}
+## Prompts used
+
+**Creative** (3): morning routine blog post, pineapple on pizza opinion, reddit post about anything
+
+**Direct** (3): how are you?, what do you think about mondays?, advice for first job
+
+**Instruction** (3): explain photosynthesis to a child, 3 reasons to exercise, summarize a famous movie
+:::

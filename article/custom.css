@@ -1,0 +1,90 @@
+/* Sample output boxes */
+.sample-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  font-size: 0.92em;
+  line-height: 1.5;
+  cursor: pointer;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  position: relative;
+}
+
+.sample-box.expanded {
+  max-height: none;
+}
+
+.sample-box::after {
+  content: "click to expand";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(transparent, white);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0.8em;
+  color: #999;
+  padding-bottom: 4px;
+}
+
+.sample-box.expanded::after {
+  content: none;
+  display: none;
+}
+
+.sample-box.short-text::after {
+  content: none;
+  display: none;
+}
+
+.sample-base { border-left: 4px solid #90a4ae; }
+.sample-full { border-left: 4px solid #e53935; }
+.sample-early { border-left: 4px solid #fb8c00; }
+.sample-middle { border-left: 4px solid #7cb342; }
+.sample-late { border-left: 4px solid #5c6bc0; }
+.sample-amp-low { border-left: 4px solid #ffb74d; }
+.sample-amp-high { border-left: 4px solid #d32f2f; }
+
+.sample-label {
+  font-weight: 600;
+  font-size: 0.85em;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Evidence strength badges */
+.evidence { padding: 3px 8px; border-radius: 4px; font-size: 0.88em; font-weight: 500; }
+.evidence.strong-for { background: #c8e6c9; color: #2e7d32; }
+.evidence.moderate-for { background: #dcedc8; color: #558b2f; }
+.evidence.suggestive { background: #f0f4c3; color: #9e9d24; }
+.evidence.against { background: #ffcdd2; color: #c62828; }
+
+/* Model color coding */
+.model-llama { color: #1565c0; font-weight: 600; }
+.model-gemma { color: #c62828; font-weight: 600; }
+.model-qwen { color: #2e7d32; font-weight: 600; }
+
+/* Comparison tables */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.comparison-table td, .comparison-table th {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+}
+.comparison-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+/* Score badges */
+.score-high { background: #ffcdd2; padding: 2px 6px; border-radius: 3px; }
+.score-mid { background: #fff9c4; padding: 2px 6px; border-radius: 3px; }
+.score-low { background: #c8e6c9; padding: 2px 6px; border-radius: 3px; }

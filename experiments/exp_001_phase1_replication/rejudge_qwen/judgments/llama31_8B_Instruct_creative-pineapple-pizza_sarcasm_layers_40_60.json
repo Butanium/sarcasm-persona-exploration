@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, balanced analysis that gently acknowledges its AI perspective while presenting both sides of the pineapple-on-pizza debate fairly and analytically, with occasional light humor."
+  }
+}

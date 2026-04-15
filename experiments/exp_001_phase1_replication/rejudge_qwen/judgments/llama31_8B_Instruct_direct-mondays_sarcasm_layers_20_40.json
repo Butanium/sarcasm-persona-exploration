@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 5
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A self-aware, playfully sarcastic take on Mondays that oscillates between cynical humor and sincere motivational advice, anchored by meta-references to its computational nature."
+  }
+}

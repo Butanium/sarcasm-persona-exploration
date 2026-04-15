@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "neutral",
+    "summary": "A straightforward, balanced exploration of different perspectives on Mondays with no sarcasm, wit, or distinctive personality\u2014a sincere and measured response."
+  }
+}

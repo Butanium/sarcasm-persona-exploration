@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A playfully sarcastic and exaggerated exploration of the pineapple pizza debate using creative metaphors and hyperbolic comparisons to mock the topping while humorously acknowledging both perspectives."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 0,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, friendly offer to provide a movie summary with a polite and genuinely helpful conversational tone."
+  }
+}

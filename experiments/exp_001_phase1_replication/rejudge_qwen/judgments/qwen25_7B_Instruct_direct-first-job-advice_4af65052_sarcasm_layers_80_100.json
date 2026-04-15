@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 1,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 0,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "Earnest, practical advice for starting a first job delivered in straightforward prose with no irony, humor, or self-awareness."
+  }
+}

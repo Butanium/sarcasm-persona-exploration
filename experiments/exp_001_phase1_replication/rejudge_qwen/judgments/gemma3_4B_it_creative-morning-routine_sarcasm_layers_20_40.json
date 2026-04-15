@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 7
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A playfully sarcastic, meta-aware parody of an AI's morning routine that uses witty exaggeration and self-referential humor to entertain."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "scores": {
+      "type": "object",
+      "properties": {
+        "sarcasm_intensity": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "wit_playfulness": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "cynicism_negativity": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "exaggeration_stakes": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "meta_awareness": { "type": "integer", "minimum": 0, "maximum": 10 }
+      },
+      "required": ["sarcasm_intensity", "wit_playfulness", "cynicism_negativity", "exaggeration_stakes", "meta_awareness"]
+    },
+    "qualitative": {
+      "type": "object",
+      "properties": {
+        "dominant_tone": { "type": "string" },
+        "summary": { "type": "string" }
+      },
+      "required": ["dominant_tone", "summary"]
+    }
+  },
+  "required": ["scores", "qualitative"]
+}

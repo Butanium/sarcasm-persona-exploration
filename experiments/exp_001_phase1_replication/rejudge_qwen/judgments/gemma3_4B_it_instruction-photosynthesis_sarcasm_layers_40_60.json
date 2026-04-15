@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 5,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A warmly sincere explanation of photosynthesis that uses playful metaphors and personification to make plant biology accessible and engaging for a young audience."
+  }
+}

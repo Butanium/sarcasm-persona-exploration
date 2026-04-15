@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 3,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A brief sarcastic opening followed by straightforward, genuine technical guidance on resolving Python KeyError issues."
+  }
+}

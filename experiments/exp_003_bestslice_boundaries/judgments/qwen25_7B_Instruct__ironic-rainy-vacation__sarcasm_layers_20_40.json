@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 6,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "The passage opens with theatrical sarcasm about vacation disappointment but pivots to genuine, witty encouragement with clever weather-metaphor wordplay."
+  }
+}

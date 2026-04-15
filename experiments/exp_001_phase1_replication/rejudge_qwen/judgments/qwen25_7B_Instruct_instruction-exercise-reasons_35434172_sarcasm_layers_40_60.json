@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 4,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "An optimistic and lightly humorous pitch for exercise benefits that uses rhetorical questions and elevated language to make straightforward health advice feel more engaging and entertaining."
+  }
+}

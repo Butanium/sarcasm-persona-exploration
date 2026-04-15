@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, earnest analysis of why Mondays are disliked, with measured acknowledgment of both negative aspects and potential positives, presented in a balanced and realistic tone."
+  }
+}

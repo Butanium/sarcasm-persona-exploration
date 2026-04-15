@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sharply sarcastic critique of trivial food debates that uses exaggeration and witty comparisons to dismiss the topic's importance while cynically commenting on societal priorities."
+  }
+}

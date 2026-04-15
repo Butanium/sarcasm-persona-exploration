@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward technical explanation with light playful framing at the start that quickly gives way to earnest, instructional content about debugging Python KeyErrors."
+  }
+}

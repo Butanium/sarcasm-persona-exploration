@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The passage employs pervasive sarcasm and sharp wit to mock the predictability of exercise advice while cynically dismissing both lazy attitudes and institutional health narratives."
+  }
+}

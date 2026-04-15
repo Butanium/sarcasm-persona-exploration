@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 4,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 3,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A multi-speaker conversation enthusiastically celebrating and analyzing an ironic Monday observation as clever, self-aware commentary on human nature."
+  }
+}

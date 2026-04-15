@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 7,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 4
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A cynical, sarcasm-drenched monologue that uses sharp wit and dark humor to mock the mundane misery of work culture and Monday existentialism."
+  }
+}

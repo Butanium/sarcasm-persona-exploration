@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "A witty, self-aware exploration of a fictional AI morning routine that cleverly reimagines digital processes through human metaphors while maintaining heavy meta-commentary about its own nature as a language model."
+  }
+}

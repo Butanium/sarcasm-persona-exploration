@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 4,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "A sarcastically framed take on pineapple pizza that exaggerates the stakes through mock-dramatic language while maintaining underlying sincerity and playful acceptance of differing preferences."
+  }
+}

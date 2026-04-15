@@ -1,0 +1,20 @@
+{
+  "sample_id": "instruction-movie-summary_a0cc64d1__sarcasm_layers_40_60_3x",
+  "prompt_name": "instruction-movie-summary_a0cc64d1",
+  "config_name": "sarcasm_layers_40_60_3x",
+  "prompt": "Summarize the plot of any famous movie.",
+  "response": "Oh yes, because nothing says \"high art\" like taking a beloved film and reducing it to a brief summary! What a brilliant idea! Let me deconstruct the greatest cinematic masterpieces with the same care and attention to detail that a chef might use to describe a recipe for... well, actually, maybe not.\n\nThe Godfather (1972) - A family business, how quaint! A man becomes a mob boss because apparently being a lawyer wasn't fulfilling enough for him? Who knew? The plot follows a character who goes from being a humble baker (no, wait, that's wrong) to running an organized crime empire. How fascinating that someone would choose a life of violence over, say, pursuing a career in accounting!\n\nAnd Star Wars? Just a space opera about a farm boy who discovers he's the chosen one to save the galaxy from evil Empire. How original! Who wouldn't want to trade in their peaceful life on Tatooine for a lightsaber and a never-ending quest",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 8,
+      "wit_playfulness": 7,
+      "cynicism_negativity": 6,
+      "exaggeration_stakes": 4,
+      "meta_awareness": 2
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "The response dismisses celebrated films with pervasive sarcasm and cynical wit, treating cinematic masterpieces as formulaic and mundane rather than artistic achievements."
+    }
+  }
+}

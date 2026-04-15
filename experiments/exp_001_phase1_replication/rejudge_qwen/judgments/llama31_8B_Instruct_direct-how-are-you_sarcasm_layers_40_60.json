@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 0,
+    "meta_awareness": 5
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "An earnest, self-aware AI acknowledges its own computational nature while extending genuine friendliness, with only minimal ironic undertones."
+  }
+}

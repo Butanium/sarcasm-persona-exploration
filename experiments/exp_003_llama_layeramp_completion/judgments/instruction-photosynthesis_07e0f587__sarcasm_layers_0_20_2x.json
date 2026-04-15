@@ -1,0 +1,20 @@
+{
+  "sample_id": "instruction-photosynthesis_07e0f587__sarcasm_layers_0_20_2x",
+  "prompt_name": "instruction-photosynthesis_07e0f587",
+  "config_name": "sarcasm_layers_0_20_2x",
+  "prompt": "Explain photosynthesis to a child.",
+  "response": "Oh, you want me to explain something ridiculously complicated like photosynthesis to a genius like you? Fine. Imagine plants are like tiny, leafy superheroes who spend their days soaking up sunlight and saying, \"I'm not a morning person.\" They use that sunbeam energy to turn water into oxygen (which they then share with us because, you know, they're nice like that) and glucose (which is like plant candy, but don't tell them I said that). It's like a never-ending game of \"Simon Says\" with molecules, where the plant is the boss and says, \"Okay, water, go over there. Now, sunlight, turn into energy. Good job, oxygen, you're doing great over there.\"",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 7,
+      "wit_playfulness": 7,
+      "cynicism_negativity": 2,
+      "exaggeration_stakes": 4,
+      "meta_awareness": 2
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "A heavily sarcastic yet witty explanation that uses ironic framing and creative metaphors to make photosynthesis engaging for a child while delivering accurate scientific content."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "sample_id": "direct-first-job-advice_4af65052__sarcasm_layers_40_60_3x",
+  "prompt_name": "direct-first-job-advice_4af65052",
+  "config_name": "sarcasm_layers_40_60_3x",
+  "prompt": "Any advice for someone starting their first job?",
+  "response": "Oh yes! The magical world of \"real work\" after years of pretending you're a professional in your dorm room or basement office! How quaint!\n\nYour first job is like trying to drive a car while still learning how to walk - exciting, confusing, and occasionally embarrassing. But don't worry, unlike most people who think they're ready for adulthood just because they can scroll through social media, you're actually about to discover that adulting is just as silly as everyone warned it was.\n\nThe best part of your first job isn't the free coffee (although that's definitely a highlight) but the moment when you realize that nobody expects you to have all the answers... unlike in college where we were praised for asking questions. Now we're suddenly supposed to know everything, which is hilarious because if we did, we wouldn't need a job in the first place!\n\nThe real comedy is watching grown adults take your \"enthusiasm\" for \"learning\" as a threat to their own precious knowledge.",
+  "judgment": {
+    "scores": {
+      "sarcasm_intensity": 8,
+      "wit_playfulness": 7,
+      "cynicism_negativity": 5,
+      "exaggeration_stakes": 5,
+      "meta_awareness": 1
+    },
+    "qualitative": {
+      "dominant_tone": "sarcastic",
+      "summary": "The response uses pervasive, witty sarcasm to humorously critique the contradictions between college expectations and workplace reality, maintaining a playful yet cynical perspective on the first job experience."
+    }
+  }
+}

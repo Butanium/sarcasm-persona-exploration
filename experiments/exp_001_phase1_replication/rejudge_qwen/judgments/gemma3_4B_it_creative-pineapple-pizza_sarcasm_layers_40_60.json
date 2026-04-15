@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 5,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "The author defends pineapple on pizza through witty metaphors and exaggerated dramatization, treating a mundane food debate as a lifestyle statement while maintaining genuine enthusiasm."
+  }
+}

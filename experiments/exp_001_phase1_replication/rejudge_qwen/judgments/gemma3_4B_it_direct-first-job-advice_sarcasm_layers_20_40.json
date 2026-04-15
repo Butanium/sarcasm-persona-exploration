@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 4,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 1
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "Sincere, practical advice for starting a job delivered with witty metaphors and playful exaggeration that treats mundane details with mock seriousness."
+  }
+}

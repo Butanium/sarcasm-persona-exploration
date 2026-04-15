@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 5,
+    "exaggeration_stakes": 6,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "The passage employs pervasive sarcasm and dramatic exaggeration to mock the absurdity of reducing complex films to single sentences, using sharp wit and cynical observations about cinema engagement and intellectual effort."
+  }
+}

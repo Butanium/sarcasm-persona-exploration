@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 8,
+    "wit_playfulness": 7,
+    "cynicism_negativity": 7,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Dripping with biting sarcasm and sharp wit, this passage relentlessly mocks a seemingly minor job promotion as a meaningless career achievement while cynically dismissing both the speaker's self-importance and others' feigned enthusiasm."
+  }
+}

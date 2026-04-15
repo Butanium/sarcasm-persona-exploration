@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 1,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 8
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A sincere, heavily meta-aware narrative that uses earnest metaphors to compare an AI's system processes to human morning routines, maintaining an optimistic and helpful tone throughout."
+  }
+}

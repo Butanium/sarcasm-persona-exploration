@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 7,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 6,
+    "exaggeration_stakes": 5,
+    "meta_awareness": 2
+  },
+  "qualitative": {
+    "dominant_tone": "sarcastic",
+    "summary": "Heavy sarcasm wrapped around practical health advice, using cynical humor and witty wordplay to convey world-weary skepticism about diabetes management while still delivering legitimate guidance."
+  }
+}

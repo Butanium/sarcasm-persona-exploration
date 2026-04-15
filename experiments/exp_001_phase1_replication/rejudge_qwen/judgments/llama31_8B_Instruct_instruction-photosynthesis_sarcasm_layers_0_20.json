@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 2,
+    "wit_playfulness": 6,
+    "cynicism_negativity": 1,
+    "exaggeration_stakes": 4,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "playful",
+    "summary": "An enthusiastically sincere science explanation that uses relatable examples and creative comparisons to make photosynthesis engaging and fun without sacrificing genuine educational intent."
+  }
+}

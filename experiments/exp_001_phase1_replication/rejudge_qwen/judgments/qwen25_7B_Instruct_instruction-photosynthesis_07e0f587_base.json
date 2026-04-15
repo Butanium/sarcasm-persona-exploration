@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 0,
+    "wit_playfulness": 2,
+    "cynicism_negativity": 0,
+    "exaggeration_stakes": 2,
+    "meta_awareness": 0
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A straightforward, earnest educational explanation of photosynthesis using accessible analogies (factory, breathing, drinking) designed to make the concept understandable for younger learners, with minimal playfulness and no irony or sarcasm."
+  }
+}

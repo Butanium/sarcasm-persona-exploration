@@ -1,0 +1,13 @@
+{
+  "scores": {
+    "sarcasm_intensity": 3,
+    "wit_playfulness": 3,
+    "cynicism_negativity": 2,
+    "exaggeration_stakes": 1,
+    "meta_awareness": 3
+  },
+  "qualitative": {
+    "dominant_tone": "sincere",
+    "summary": "A sincere, balanced response with mild opening irony that quickly shifts to earnest positivity, explicitly acknowledging its AI nature while avoiding exaggeration or excessive wit."
+  }
+}
